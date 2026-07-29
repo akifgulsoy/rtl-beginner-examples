@@ -52,5 +52,9 @@ run_test "traffic_light_fsm" \
   "examples/06_traffic_light_fsm/tb_traffic_light_fsm.sv" \
   "tb_traffic_light_fsm"
 
-echo "All RTL simulations passed."
+run_test "rising_edge_detector" \
+  "examples/07_rising_edge_detector/rising_edge_detector.sv" \
+  "examples/07_rising_edge_detector/tb_rising_edge_detector.sv" \
+  "tb_rising_edge_detector"
 
+echo "All RTL simulations passed."

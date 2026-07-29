@@ -41,6 +41,12 @@ $tests = @(
         Rtl = "examples/06_traffic_light_fsm/traffic_light_fsm.sv"
         Testbench = "examples/06_traffic_light_fsm/tb_traffic_light_fsm.sv"
         Top = "tb_traffic_light_fsm"
+    },
+    @{
+        Name = "rising_edge_detector"
+        Rtl = "examples/07_rising_edge_detector/rising_edge_detector.sv"
+        Testbench = "examples/07_rising_edge_detector/tb_rising_edge_detector.sv"
+        Top = "tb_rising_edge_detector"
     }
 )
 
@@ -65,4 +71,3 @@ foreach ($test in $tests) {
 }
 
 Write-Host "All RTL simulations passed."
-

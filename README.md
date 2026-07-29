@@ -14,6 +14,7 @@ finishes with either a clear `PASS` message or an error.
 | 04 | Counter | Synchronous reset, enable and sequential state |
 | 05 | Shift register | Moving serial data through registers |
 | 06 | Traffic light FSM | State types, next-state logic and outputs |
+| 07 | Rising-edge detector | Creating a one-clock pulse from a changing input |
 
 ## Repository Structure
 
@@ -25,6 +26,7 @@ examples/
   04_counter/
   05_shift_register/
   06_traffic_light_fsm/
+  07_rising_edge_detector/
 scripts/
   run_all.sh
   run_all.ps1
@@ -84,4 +86,3 @@ vvp build/counter.out
 ## License
 
 This project is available under the MIT License.
-
