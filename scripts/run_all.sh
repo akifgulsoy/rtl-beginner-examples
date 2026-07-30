@@ -57,4 +57,9 @@ run_test "rising_edge_detector" \
   "examples/07_rising_edge_detector/tb_rising_edge_detector.sv" \
   "tb_rising_edge_detector"
 
+run_test "two_flip_flop_synchronizer" \
+  "examples/08_two_flip_flop_synchronizer/two_flip_flop_synchronizer.sv" \
+  "examples/08_two_flip_flop_synchronizer/tb_two_flip_flop_synchronizer.sv" \
+  "tb_two_flip_flop_synchronizer"
+
 echo "All RTL simulations passed."

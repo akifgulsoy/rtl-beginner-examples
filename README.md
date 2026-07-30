@@ -15,6 +15,7 @@ finishes with either a clear `PASS` message or an error.
 | 05 | Shift register | Moving serial data through registers |
 | 06 | Traffic light FSM | State types, next-state logic and outputs |
 | 07 | Rising-edge detector | Creating a one-clock pulse from a changing input |
+| 08 | Two-flip-flop synchronizer | Safely sampling a single-bit signal from another clock domain |
 
 ## Repository Structure
 
@@ -27,6 +28,7 @@ examples/
   05_shift_register/
   06_traffic_light_fsm/
   07_rising_edge_detector/
+  08_two_flip_flop_synchronizer/
 scripts/
   run_all.sh
   run_all.ps1

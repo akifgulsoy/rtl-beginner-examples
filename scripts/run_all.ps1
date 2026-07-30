@@ -47,6 +47,12 @@ $tests = @(
         Rtl = "examples/07_rising_edge_detector/rising_edge_detector.sv"
         Testbench = "examples/07_rising_edge_detector/tb_rising_edge_detector.sv"
         Top = "tb_rising_edge_detector"
+    },
+    @{
+        Name = "two_flip_flop_synchronizer"
+        Rtl = "examples/08_two_flip_flop_synchronizer/two_flip_flop_synchronizer.sv"
+        Testbench = "examples/08_two_flip_flop_synchronizer/tb_two_flip_flop_synchronizer.sv"
+        Top = "tb_two_flip_flop_synchronizer"
     }
 )
 
