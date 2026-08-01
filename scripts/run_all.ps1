@@ -59,6 +59,12 @@ $tests = @(
         Rtl = "examples/09_pulse_stretcher/pulse_stretcher.sv"
         Testbench = "examples/09_pulse_stretcher/tb_pulse_stretcher.sv"
         Top = "tb_pulse_stretcher"
+    },
+    @{
+        Name = "clock_enable_generator"
+        Rtl = "examples/10_clock_enable_generator/clock_enable_generator.sv"
+        Testbench = "examples/10_clock_enable_generator/tb_clock_enable_generator.sv"
+        Top = "tb_clock_enable_generator"
     }
 )
 

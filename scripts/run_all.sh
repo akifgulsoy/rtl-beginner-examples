@@ -67,4 +67,9 @@ run_test "pulse_stretcher" \
   "examples/09_pulse_stretcher/tb_pulse_stretcher.sv" \
   "tb_pulse_stretcher"
 
+run_test "clock_enable_generator" \
+  "examples/10_clock_enable_generator/clock_enable_generator.sv" \
+  "examples/10_clock_enable_generator/tb_clock_enable_generator.sv" \
+  "tb_clock_enable_generator"
+
 echo "All RTL simulations passed."

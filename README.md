@@ -17,6 +17,7 @@ finishes with either a clear `PASS` message or an error.
 | 07 | Rising-edge detector | Creating a one-clock pulse from a changing input |
 | 08 | Two-flip-flop synchronizer | Safely sampling a single-bit signal from another clock domain |
 | 09 | Pulse stretcher | Keeping a short event visible for a fixed number of clock cycles |
+| 10 | Clock-enable generator | Creating a periodic one-clock enable without a derived clock |
 
 ## Repository Structure
 
@@ -31,6 +32,7 @@ examples/
   07_rising_edge_detector/
   08_two_flip_flop_synchronizer/
   09_pulse_stretcher/
+  10_clock_enable_generator/
 scripts/
   run_all.sh
   run_all.ps1
