@@ -53,6 +53,12 @@ $tests = @(
         Rtl = "examples/08_two_flip_flop_synchronizer/two_flip_flop_synchronizer.sv"
         Testbench = "examples/08_two_flip_flop_synchronizer/tb_two_flip_flop_synchronizer.sv"
         Top = "tb_two_flip_flop_synchronizer"
+    },
+    @{
+        Name = "pulse_stretcher"
+        Rtl = "examples/09_pulse_stretcher/pulse_stretcher.sv"
+        Testbench = "examples/09_pulse_stretcher/tb_pulse_stretcher.sv"
+        Top = "tb_pulse_stretcher"
     }
 )
 

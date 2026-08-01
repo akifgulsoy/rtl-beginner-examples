@@ -62,4 +62,9 @@ run_test "two_flip_flop_synchronizer" \
   "examples/08_two_flip_flop_synchronizer/tb_two_flip_flop_synchronizer.sv" \
   "tb_two_flip_flop_synchronizer"
 
+run_test "pulse_stretcher" \
+  "examples/09_pulse_stretcher/pulse_stretcher.sv" \
+  "examples/09_pulse_stretcher/tb_pulse_stretcher.sv" \
+  "tb_pulse_stretcher"
+
 echo "All RTL simulations passed."
