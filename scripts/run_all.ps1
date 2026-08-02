@@ -65,6 +65,12 @@ $tests = @(
         Rtl = "examples/10_clock_enable_generator/clock_enable_generator.sv"
         Testbench = "examples/10_clock_enable_generator/tb_clock_enable_generator.sv"
         Top = "tb_clock_enable_generator"
+    },
+    @{
+        Name = "pwm_generator"
+        Rtl = "examples/11_pwm_generator/pwm_generator.sv"
+        Testbench = "examples/11_pwm_generator/tb_pwm_generator.sv"
+        Top = "tb_pwm_generator"
     }
 )
 

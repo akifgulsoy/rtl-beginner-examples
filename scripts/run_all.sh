@@ -72,4 +72,9 @@ run_test "clock_enable_generator" \
   "examples/10_clock_enable_generator/tb_clock_enable_generator.sv" \
   "tb_clock_enable_generator"
 
+run_test "pwm_generator" \
+  "examples/11_pwm_generator/pwm_generator.sv" \
+  "examples/11_pwm_generator/tb_pwm_generator.sv" \
+  "tb_pwm_generator"
+
 echo "All RTL simulations passed."
