@@ -71,6 +71,12 @@ $tests = @(
         Rtl = "examples/11_pwm_generator/pwm_generator.sv"
         Testbench = "examples/11_pwm_generator/tb_pwm_generator.sv"
         Top = "tb_pwm_generator"
+    },
+    @{
+        Name = "priority_encoder"
+        Rtl = "examples/12_priority_encoder/priority_encoder.sv"
+        Testbench = "examples/12_priority_encoder/tb_priority_encoder.sv"
+        Top = "tb_priority_encoder"
     }
 )
 

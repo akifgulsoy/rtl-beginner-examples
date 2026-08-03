@@ -19,6 +19,7 @@ finishes with either a clear `PASS` message or an error.
 | 09 | Pulse stretcher | Keeping a short event visible for a fixed number of clock cycles |
 | 10 | Clock-enable generator | Creating a periodic one-clock enable without a derived clock |
 | 11 | PWM generator | Creating a periodic digital waveform with an adjustable duty cycle |
+| 12 | Priority encoder | Choosing the highest-priority active request |
 
 ## Repository Structure
 
@@ -35,6 +36,7 @@ examples/
   09_pulse_stretcher/
   10_clock_enable_generator/
   11_pwm_generator/
+  12_priority_encoder/
 scripts/
   run_all.sh
   run_all.ps1

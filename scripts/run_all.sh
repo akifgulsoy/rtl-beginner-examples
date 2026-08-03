@@ -77,4 +77,9 @@ run_test "pwm_generator" \
   "examples/11_pwm_generator/tb_pwm_generator.sv" \
   "tb_pwm_generator"
 
+run_test "priority_encoder" \
+  "examples/12_priority_encoder/priority_encoder.sv" \
+  "examples/12_priority_encoder/tb_priority_encoder.sv" \
+  "tb_priority_encoder"
+
 echo "All RTL simulations passed."
