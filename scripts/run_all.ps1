@@ -83,6 +83,12 @@ $tests = @(
         Rtl = "examples/13_round_robin_arbiter/round_robin_arbiter.sv"
         Testbench = "examples/13_round_robin_arbiter/tb_round_robin_arbiter.sv"
         Top = "tb_round_robin_arbiter"
+    },
+    @{
+        Name = "input_debouncer"
+        Rtl = "examples/14_input_debouncer/input_debouncer.sv"
+        Testbench = "examples/14_input_debouncer/tb_input_debouncer.sv"
+        Top = "tb_input_debouncer"
     }
 )
 

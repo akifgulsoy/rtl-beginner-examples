@@ -87,4 +87,9 @@ run_test "round_robin_arbiter" \
   "examples/13_round_robin_arbiter/tb_round_robin_arbiter.sv" \
   "tb_round_robin_arbiter"
 
+run_test "input_debouncer" \
+  "examples/14_input_debouncer/input_debouncer.sv" \
+  "examples/14_input_debouncer/tb_input_debouncer.sv" \
+  "tb_input_debouncer"
+
 echo "All RTL simulations passed."

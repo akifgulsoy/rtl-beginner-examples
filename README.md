@@ -21,6 +21,7 @@ finishes with either a clear `PASS` message or an error.
 | 11 | PWM generator | Creating a periodic digital waveform with an adjustable duty cycle |
 | 12 | Priority encoder | Choosing the highest-priority active request |
 | 13 | Round-robin arbiter | Rotating grant priority so persistent requests share access fairly |
+| 14 | Input debouncer | Ignoring short input bounces until a level is stable |
 
 ## Repository Structure
 
@@ -39,6 +40,7 @@ examples/
   11_pwm_generator/
   12_priority_encoder/
   13_round_robin_arbiter/
+  14_input_debouncer/
 scripts/
   run_all.sh
   run_all.ps1
