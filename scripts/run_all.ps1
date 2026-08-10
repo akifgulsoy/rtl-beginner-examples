@@ -77,6 +77,12 @@ $tests = @(
         Rtl = "examples/12_priority_encoder/priority_encoder.sv"
         Testbench = "examples/12_priority_encoder/tb_priority_encoder.sv"
         Top = "tb_priority_encoder"
+    },
+    @{
+        Name = "round_robin_arbiter"
+        Rtl = "examples/13_round_robin_arbiter/round_robin_arbiter.sv"
+        Testbench = "examples/13_round_robin_arbiter/tb_round_robin_arbiter.sv"
+        Top = "tb_round_robin_arbiter"
     }
 )
 

@@ -20,6 +20,7 @@ finishes with either a clear `PASS` message or an error.
 | 10 | Clock-enable generator | Creating a periodic one-clock enable without a derived clock |
 | 11 | PWM generator | Creating a periodic digital waveform with an adjustable duty cycle |
 | 12 | Priority encoder | Choosing the highest-priority active request |
+| 13 | Round-robin arbiter | Rotating grant priority so persistent requests share access fairly |
 
 ## Repository Structure
 
@@ -37,6 +38,7 @@ examples/
   10_clock_enable_generator/
   11_pwm_generator/
   12_priority_encoder/
+  13_round_robin_arbiter/
 scripts/
   run_all.sh
   run_all.ps1

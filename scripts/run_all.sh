@@ -82,4 +82,9 @@ run_test "priority_encoder" \
   "examples/12_priority_encoder/tb_priority_encoder.sv" \
   "tb_priority_encoder"
 
+run_test "round_robin_arbiter" \
+  "examples/13_round_robin_arbiter/round_robin_arbiter.sv" \
+  "examples/13_round_robin_arbiter/tb_round_robin_arbiter.sv" \
+  "tb_round_robin_arbiter"
+
 echo "All RTL simulations passed."
