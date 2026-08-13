@@ -92,4 +92,9 @@ run_test "input_debouncer" \
   "examples/14_input_debouncer/tb_input_debouncer.sv" \
   "tb_input_debouncer"
 
+run_test "saturating_counter" \
+  "examples/15_saturating_counter/saturating_counter.sv" \
+  "examples/15_saturating_counter/tb_saturating_counter.sv" \
+  "tb_saturating_counter"
+
 echo "All RTL simulations passed."

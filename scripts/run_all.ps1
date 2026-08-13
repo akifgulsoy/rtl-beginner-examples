@@ -89,6 +89,12 @@ $tests = @(
         Rtl = "examples/14_input_debouncer/input_debouncer.sv"
         Testbench = "examples/14_input_debouncer/tb_input_debouncer.sv"
         Top = "tb_input_debouncer"
+    },
+    @{
+        Name = "saturating_counter"
+        Rtl = "examples/15_saturating_counter/saturating_counter.sv"
+        Testbench = "examples/15_saturating_counter/tb_saturating_counter.sv"
+        Top = "tb_saturating_counter"
     }
 )
 

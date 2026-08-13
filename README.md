@@ -22,6 +22,7 @@ finishes with either a clear `PASS` message or an error.
 | 12 | Priority encoder | Choosing the highest-priority active request |
 | 13 | Round-robin arbiter | Rotating grant priority so persistent requests share access fairly |
 | 14 | Input debouncer | Ignoring short input bounces until a level is stable |
+| 15 | Saturating counter | Counting between fixed limits without wrapping around |
 
 ## Repository Structure
 
@@ -41,6 +42,7 @@ examples/
   12_priority_encoder/
   13_round_robin_arbiter/
   14_input_debouncer/
+  15_saturating_counter/
 scripts/
   run_all.sh
   run_all.ps1
