@@ -97,4 +97,9 @@ run_test "saturating_counter" \
   "examples/15_saturating_counter/tb_saturating_counter.sv" \
   "tb_saturating_counter"
 
+run_test "up_down_counter" \
+  "examples/16_up_down_counter/up_down_counter.sv" \
+  "examples/16_up_down_counter/tb_up_down_counter.sv" \
+  "tb_up_down_counter"
+
 echo "All RTL simulations passed."

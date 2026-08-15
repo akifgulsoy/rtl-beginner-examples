@@ -23,6 +23,7 @@ finishes with either a clear `PASS` message or an error.
 | 13 | Round-robin arbiter | Rotating grant priority so persistent requests share access fairly |
 | 14 | Input debouncer | Ignoring short input bounces until a level is stable |
 | 15 | Saturating counter | Counting between fixed limits without wrapping around |
+| 16 | Up/down counter | Counting in either direction with unsigned wrap-around |
 
 ## Repository Structure
 
@@ -43,6 +44,7 @@ examples/
   13_round_robin_arbiter/
   14_input_debouncer/
   15_saturating_counter/
+  16_up_down_counter/
 scripts/
   run_all.sh
   run_all.ps1
