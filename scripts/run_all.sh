@@ -102,4 +102,9 @@ run_test "up_down_counter" \
   "examples/16_up_down_counter/tb_up_down_counter.sv" \
   "tb_up_down_counter"
 
+run_test "binary_to_gray" \
+  "examples/17_binary_to_gray/binary_to_gray.sv" \
+  "examples/17_binary_to_gray/tb_binary_to_gray.sv" \
+  "tb_binary_to_gray"
+
 echo "All RTL simulations passed."

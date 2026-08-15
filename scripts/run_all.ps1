@@ -101,6 +101,12 @@ $tests = @(
         Rtl = "examples/16_up_down_counter/up_down_counter.sv"
         Testbench = "examples/16_up_down_counter/tb_up_down_counter.sv"
         Top = "tb_up_down_counter"
+    },
+    @{
+        Name = "binary_to_gray"
+        Rtl = "examples/17_binary_to_gray/binary_to_gray.sv"
+        Testbench = "examples/17_binary_to_gray/tb_binary_to_gray.sv"
+        Top = "tb_binary_to_gray"
     }
 )
 
