@@ -107,4 +107,9 @@ run_test "binary_to_gray" \
   "examples/17_binary_to_gray/tb_binary_to_gray.sv" \
   "tb_binary_to_gray"
 
+run_test "logical_shifter" \
+  "examples/18_logical_shifter/logical_shifter.sv" \
+  "examples/18_logical_shifter/tb_logical_shifter.sv" \
+  "tb_logical_shifter"
+
 echo "All RTL simulations passed."

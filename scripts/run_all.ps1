@@ -107,6 +107,12 @@ $tests = @(
         Rtl = "examples/17_binary_to_gray/binary_to_gray.sv"
         Testbench = "examples/17_binary_to_gray/tb_binary_to_gray.sv"
         Top = "tb_binary_to_gray"
+    },
+    @{
+        Name = "logical_shifter"
+        Rtl = "examples/18_logical_shifter/logical_shifter.sv"
+        Testbench = "examples/18_logical_shifter/tb_logical_shifter.sv"
+        Top = "tb_logical_shifter"
     }
 )
 

@@ -25,6 +25,7 @@ finishes with either a clear `PASS` message or an error.
 | 15 | Saturating counter | Counting between fixed limits without wrapping around |
 | 16 | Up/down counter | Counting in either direction with unsigned wrap-around |
 | 17 | Binary-to-Gray converter | Encoding a binary value so adjacent counts change one bit |
+| 18 | Logical shifter | Moving bits left or right by a variable amount while filling with zeros |
 
 ## Repository Structure
 
@@ -47,6 +48,7 @@ examples/
   15_saturating_counter/
   16_up_down_counter/
   17_binary_to_gray/
+  18_logical_shifter/
 scripts/
   run_all.sh
   run_all.ps1
