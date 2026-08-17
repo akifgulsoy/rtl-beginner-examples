@@ -112,4 +112,9 @@ run_test "logical_shifter" \
   "examples/18_logical_shifter/tb_logical_shifter.sv" \
   "tb_logical_shifter"
 
+run_test "arithmetic_right_shifter" \
+  "examples/19_arithmetic_right_shifter/arithmetic_right_shifter.sv" \
+  "examples/19_arithmetic_right_shifter/tb_arithmetic_right_shifter.sv" \
+  "tb_arithmetic_right_shifter"
+
 echo "All RTL simulations passed."

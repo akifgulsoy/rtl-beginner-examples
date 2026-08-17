@@ -113,6 +113,12 @@ $tests = @(
         Rtl = "examples/18_logical_shifter/logical_shifter.sv"
         Testbench = "examples/18_logical_shifter/tb_logical_shifter.sv"
         Top = "tb_logical_shifter"
+    },
+    @{
+        Name = "arithmetic_right_shifter"
+        Rtl = "examples/19_arithmetic_right_shifter/arithmetic_right_shifter.sv"
+        Testbench = "examples/19_arithmetic_right_shifter/tb_arithmetic_right_shifter.sv"
+        Top = "tb_arithmetic_right_shifter"
     }
 )
 

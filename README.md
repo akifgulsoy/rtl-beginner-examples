@@ -26,6 +26,7 @@ finishes with either a clear `PASS` message or an error.
 | 16 | Up/down counter | Counting in either direction with unsigned wrap-around |
 | 17 | Binary-to-Gray converter | Encoding a binary value so adjacent counts change one bit |
 | 18 | Logical shifter | Moving bits left or right by a variable amount while filling with zeros |
+| 19 | Arithmetic right shifter | Shifting signed values right while preserving the sign bit |
 
 ## Repository Structure
 
@@ -49,6 +50,7 @@ examples/
   16_up_down_counter/
   17_binary_to_gray/
   18_logical_shifter/
+  19_arithmetic_right_shifter/
 scripts/
   run_all.sh
   run_all.ps1
