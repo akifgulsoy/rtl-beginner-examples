@@ -27,6 +27,7 @@ finishes with either a clear `PASS` message or an error.
 | 17 | Binary-to-Gray converter | Encoding a binary value so adjacent counts change one bit |
 | 18 | Logical shifter | Moving bits left or right by a variable amount while filling with zeros |
 | 19 | Arithmetic right shifter | Shifting signed values right while preserving the sign bit |
+| 20 | Bit rotator | Moving bits left or right while wrapping them around the word |
 
 ## Repository Structure
 
@@ -51,6 +52,7 @@ examples/
   17_binary_to_gray/
   18_logical_shifter/
   19_arithmetic_right_shifter/
+  20_bit_rotator/
 scripts/
   run_all.sh
   run_all.ps1

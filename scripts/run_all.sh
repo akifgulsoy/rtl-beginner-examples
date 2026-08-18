@@ -117,4 +117,9 @@ run_test "arithmetic_right_shifter" \
   "examples/19_arithmetic_right_shifter/tb_arithmetic_right_shifter.sv" \
   "tb_arithmetic_right_shifter"
 
+run_test "bit_rotator" \
+  "examples/20_bit_rotator/bit_rotator.sv" \
+  "examples/20_bit_rotator/tb_bit_rotator.sv" \
+  "tb_bit_rotator"
+
 echo "All RTL simulations passed."
