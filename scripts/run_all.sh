@@ -122,4 +122,9 @@ run_test "bit_rotator" \
   "examples/20_bit_rotator/tb_bit_rotator.sv" \
   "tb_bit_rotator"
 
+run_test "parity_checker" \
+  "examples/21_parity_checker/parity_checker.sv" \
+  "examples/21_parity_checker/tb_parity_checker.sv" \
+  "tb_parity_checker"
+
 echo "All RTL simulations passed."

@@ -28,6 +28,7 @@ finishes with either a clear `PASS` message or an error.
 | 18 | Logical shifter | Moving bits left or right by a variable amount while filling with zeros |
 | 19 | Arithmetic right shifter | Shifting signed values right while preserving the sign bit |
 | 20 | Bit rotator | Moving bits left or right while wrapping them around the word |
+| 21 | Parity checker | Detecting a wrong even- or odd-parity bit with a reduction XOR |
 
 ## Repository Structure
 
@@ -53,6 +54,7 @@ examples/
   18_logical_shifter/
   19_arithmetic_right_shifter/
   20_bit_rotator/
+  21_parity_checker/
 scripts/
   run_all.sh
   run_all.ps1

@@ -125,6 +125,12 @@ $tests = @(
         Rtl = "examples/20_bit_rotator/bit_rotator.sv"
         Testbench = "examples/20_bit_rotator/tb_bit_rotator.sv"
         Top = "tb_bit_rotator"
+    },
+    @{
+        Name = "parity_checker"
+        Rtl = "examples/21_parity_checker/parity_checker.sv"
+        Testbench = "examples/21_parity_checker/tb_parity_checker.sv"
+        Top = "tb_parity_checker"
     }
 )
 
