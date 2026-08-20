@@ -127,4 +127,9 @@ run_test "parity_checker" \
   "examples/21_parity_checker/tb_parity_checker.sv" \
   "tb_parity_checker"
 
+run_test "magnitude_comparator" \
+  "examples/22_magnitude_comparator/magnitude_comparator.sv" \
+  "examples/22_magnitude_comparator/tb_magnitude_comparator.sv" \
+  "tb_magnitude_comparator"
+
 echo "All RTL simulations passed."

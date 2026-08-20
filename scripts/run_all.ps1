@@ -131,6 +131,12 @@ $tests = @(
         Rtl = "examples/21_parity_checker/parity_checker.sv"
         Testbench = "examples/21_parity_checker/tb_parity_checker.sv"
         Top = "tb_parity_checker"
+    },
+    @{
+        Name = "magnitude_comparator"
+        Rtl = "examples/22_magnitude_comparator/magnitude_comparator.sv"
+        Testbench = "examples/22_magnitude_comparator/tb_magnitude_comparator.sv"
+        Top = "tb_magnitude_comparator"
     }
 )
 
