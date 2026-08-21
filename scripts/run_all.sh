@@ -132,4 +132,9 @@ run_test "magnitude_comparator" \
   "examples/22_magnitude_comparator/tb_magnitude_comparator.sv" \
   "tb_magnitude_comparator"
 
+run_test "one_hot_decoder" \
+  "examples/23_one_hot_decoder/one_hot_decoder.sv" \
+  "examples/23_one_hot_decoder/tb_one_hot_decoder.sv" \
+  "tb_one_hot_decoder"
+
 echo "All RTL simulations passed."

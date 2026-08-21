@@ -30,6 +30,7 @@ finishes with either a clear `PASS` message or an error.
 | 20 | Bit rotator | Moving bits left or right while wrapping them around the word |
 | 21 | Parity checker | Detecting a wrong even- or odd-parity bit with a reduction XOR |
 | 22 | Magnitude comparator | Comparing two unsigned values as less than, equal to, or greater than |
+| 23 | One-hot decoder | Selecting exactly one output from a binary index and enable |
 
 ## Repository Structure
 
@@ -57,6 +58,7 @@ examples/
   20_bit_rotator/
   21_parity_checker/
   22_magnitude_comparator/
+  23_one_hot_decoder/
 scripts/
   run_all.sh
   run_all.ps1

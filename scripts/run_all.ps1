@@ -137,6 +137,12 @@ $tests = @(
         Rtl = "examples/22_magnitude_comparator/magnitude_comparator.sv"
         Testbench = "examples/22_magnitude_comparator/tb_magnitude_comparator.sv"
         Top = "tb_magnitude_comparator"
+    },
+    @{
+        Name = "one_hot_decoder"
+        Rtl = "examples/23_one_hot_decoder/one_hot_decoder.sv"
+        Testbench = "examples/23_one_hot_decoder/tb_one_hot_decoder.sv"
+        Top = "tb_one_hot_decoder"
     }
 )
 
