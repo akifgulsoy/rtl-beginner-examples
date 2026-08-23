@@ -137,4 +137,9 @@ run_test "one_hot_decoder" \
   "examples/23_one_hot_decoder/tb_one_hot_decoder.sv" \
   "tb_one_hot_decoder"
 
+run_test "sequence_detector" \
+  "examples/24_sequence_detector/sequence_detector.sv" \
+  "examples/24_sequence_detector/tb_sequence_detector.sv" \
+  "tb_sequence_detector"
+
 echo "All RTL simulations passed."

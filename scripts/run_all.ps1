@@ -143,6 +143,12 @@ $tests = @(
         Rtl = "examples/23_one_hot_decoder/one_hot_decoder.sv"
         Testbench = "examples/23_one_hot_decoder/tb_one_hot_decoder.sv"
         Top = "tb_one_hot_decoder"
+    },
+    @{
+        Name = "sequence_detector"
+        Rtl = "examples/24_sequence_detector/sequence_detector.sv"
+        Testbench = "examples/24_sequence_detector/tb_sequence_detector.sv"
+        Top = "tb_sequence_detector"
     }
 )
 

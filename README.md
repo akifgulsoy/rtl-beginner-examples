@@ -31,6 +31,7 @@ finishes with either a clear `PASS` message or an error.
 | 21 | Parity checker | Detecting a wrong even- or odd-parity bit with a reduction XOR |
 | 22 | Magnitude comparator | Comparing two unsigned values as less than, equal to, or greater than |
 | 23 | One-hot decoder | Selecting exactly one output from a binary index and enable |
+| 24 | Sequence detector | Using a Moore FSM to find overlapping `1011` bit patterns |
 
 ## Repository Structure
 
@@ -59,6 +60,7 @@ examples/
   21_parity_checker/
   22_magnitude_comparator/
   23_one_hot_decoder/
+  24_sequence_detector/
 scripts/
   run_all.sh
   run_all.ps1
