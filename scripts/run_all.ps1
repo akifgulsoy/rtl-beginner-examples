@@ -149,6 +149,12 @@ $tests = @(
         Rtl = "examples/24_sequence_detector/sequence_detector.sv"
         Testbench = "examples/24_sequence_detector/tb_sequence_detector.sv"
         Top = "tb_sequence_detector"
+    },
+    @{
+        Name = "sync_fifo"
+        Rtl = "examples/25_sync_fifo/sync_fifo.sv"
+        Testbench = "examples/25_sync_fifo/tb_sync_fifo.sv"
+        Top = "tb_sync_fifo"
     }
 )
 

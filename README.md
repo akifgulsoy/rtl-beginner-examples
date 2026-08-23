@@ -32,6 +32,7 @@ finishes with either a clear `PASS` message or an error.
 | 22 | Magnitude comparator | Comparing two unsigned values as less than, equal to, or greater than |
 | 23 | One-hot decoder | Selecting exactly one output from a binary index and enable |
 | 24 | Sequence detector | Using a Moore FSM to find overlapping `1011` bit patterns |
+| 25 | Synchronous FIFO | Buffering data in first-in, first-out order with full and empty flags |
 
 ## Repository Structure
 
@@ -61,6 +62,7 @@ examples/
   22_magnitude_comparator/
   23_one_hot_decoder/
   24_sequence_detector/
+  25_sync_fifo/
 scripts/
   run_all.sh
   run_all.ps1

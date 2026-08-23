@@ -142,4 +142,9 @@ run_test "sequence_detector" \
   "examples/24_sequence_detector/tb_sequence_detector.sv" \
   "tb_sequence_detector"
 
+run_test "sync_fifo" \
+  "examples/25_sync_fifo/sync_fifo.sv" \
+  "examples/25_sync_fifo/tb_sync_fifo.sv" \
+  "tb_sync_fifo"
+
 echo "All RTL simulations passed."
