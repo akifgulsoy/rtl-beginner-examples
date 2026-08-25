@@ -147,4 +147,9 @@ run_test "sync_fifo" \
   "examples/25_sync_fifo/tb_sync_fifo.sv" \
   "tb_sync_fifo"
 
+run_test "uart_transmitter" \
+  "examples/26_uart_transmitter/uart_transmitter.sv" \
+  "examples/26_uart_transmitter/tb_uart_transmitter.sv" \
+  "tb_uart_transmitter"
+
 echo "All RTL simulations passed."

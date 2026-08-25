@@ -33,6 +33,7 @@ finishes with either a clear `PASS` message or an error.
 | 23 | One-hot decoder | Selecting exactly one output from a binary index and enable |
 | 24 | Sequence detector | Using a Moore FSM to find overlapping `1011` bit patterns |
 | 25 | Synchronous FIFO | Buffering data in first-in, first-out order with full and empty flags |
+| 26 | UART transmitter | Serializing a byte as start, least-significant-bit-first data, and stop bits |
 
 ## Repository Structure
 
@@ -63,6 +64,7 @@ examples/
   23_one_hot_decoder/
   24_sequence_detector/
   25_sync_fifo/
+  26_uart_transmitter/
 scripts/
   run_all.sh
   run_all.ps1

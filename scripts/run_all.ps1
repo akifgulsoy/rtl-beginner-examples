@@ -155,6 +155,12 @@ $tests = @(
         Rtl = "examples/25_sync_fifo/sync_fifo.sv"
         Testbench = "examples/25_sync_fifo/tb_sync_fifo.sv"
         Top = "tb_sync_fifo"
+    },
+    @{
+        Name = "uart_transmitter"
+        Rtl = "examples/26_uart_transmitter/uart_transmitter.sv"
+        Testbench = "examples/26_uart_transmitter/tb_uart_transmitter.sv"
+        Top = "tb_uart_transmitter"
     }
 )
 
