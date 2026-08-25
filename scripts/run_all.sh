@@ -152,4 +152,9 @@ run_test "uart_transmitter" \
   "examples/26_uart_transmitter/tb_uart_transmitter.sv" \
   "tb_uart_transmitter"
 
+run_test "uart_receiver" \
+  "examples/27_uart_receiver/uart_receiver.sv" \
+  "examples/27_uart_receiver/tb_uart_receiver.sv" \
+  "tb_uart_receiver"
+
 echo "All RTL simulations passed."

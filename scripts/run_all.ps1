@@ -161,6 +161,12 @@ $tests = @(
         Rtl = "examples/26_uart_transmitter/uart_transmitter.sv"
         Testbench = "examples/26_uart_transmitter/tb_uart_transmitter.sv"
         Top = "tb_uart_transmitter"
+    },
+    @{
+        Name = "uart_receiver"
+        Rtl = "examples/27_uart_receiver/uart_receiver.sv"
+        Testbench = "examples/27_uart_receiver/tb_uart_receiver.sv"
+        Top = "tb_uart_receiver"
     }
 )
 

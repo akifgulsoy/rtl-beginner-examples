@@ -34,6 +34,7 @@ finishes with either a clear `PASS` message or an error.
 | 24 | Sequence detector | Using a Moore FSM to find overlapping `1011` bit patterns |
 | 25 | Synchronous FIFO | Buffering data in first-in, first-out order with full and empty flags |
 | 26 | UART transmitter | Serializing a byte as start, least-significant-bit-first data, and stop bits |
+| 27 | UART receiver | Sampling a UART frame and reporting valid data or a bad stop bit |
 
 ## Repository Structure
 
@@ -65,6 +66,7 @@ examples/
   24_sequence_detector/
   25_sync_fifo/
   26_uart_transmitter/
+  27_uart_receiver/
 scripts/
   run_all.sh
   run_all.ps1
