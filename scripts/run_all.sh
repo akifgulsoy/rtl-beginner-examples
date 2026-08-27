@@ -162,4 +162,9 @@ run_test "single_port_ram" \
   "examples/28_single_port_ram/tb_single_port_ram.sv" \
   "tb_single_port_ram"
 
+run_test "simple_alu" \
+  "examples/29_simple_alu/simple_alu.sv" \
+  "examples/29_simple_alu/tb_simple_alu.sv" \
+  "tb_simple_alu"
+
 echo "All RTL simulations passed."

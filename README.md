@@ -36,6 +36,7 @@ finishes with either a clear `PASS` message or an error.
 | 26 | UART transmitter | Serializing a byte as start, least-significant-bit-first data, and stop bits |
 | 27 | UART receiver | Sampling a UART frame and reporting valid data or a bad stop bit |
 | 28 | Single-port RAM | Storing words on clocked writes and reading the selected address asynchronously |
+| 29 | Simple ALU | Selecting arithmetic, logic, and shift operations with a combinational case statement |
 
 ## Repository Structure
 
@@ -69,6 +70,7 @@ examples/
   26_uart_transmitter/
   27_uart_receiver/
   28_single_port_ram/
+  29_simple_alu/
 scripts/
   run_all.sh
   run_all.ps1
