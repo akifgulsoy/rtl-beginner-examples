@@ -157,4 +157,9 @@ run_test "uart_receiver" \
   "examples/27_uart_receiver/tb_uart_receiver.sv" \
   "tb_uart_receiver"
 
+run_test "single_port_ram" \
+  "examples/28_single_port_ram/single_port_ram.sv" \
+  "examples/28_single_port_ram/tb_single_port_ram.sv" \
+  "tb_single_port_ram"
+
 echo "All RTL simulations passed."

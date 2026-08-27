@@ -35,6 +35,7 @@ finishes with either a clear `PASS` message or an error.
 | 25 | Synchronous FIFO | Buffering data in first-in, first-out order with full and empty flags |
 | 26 | UART transmitter | Serializing a byte as start, least-significant-bit-first data, and stop bits |
 | 27 | UART receiver | Sampling a UART frame and reporting valid data or a bad stop bit |
+| 28 | Single-port RAM | Storing words on clocked writes and reading the selected address asynchronously |
 
 ## Repository Structure
 
@@ -67,6 +68,7 @@ examples/
   25_sync_fifo/
   26_uart_transmitter/
   27_uart_receiver/
+  28_single_port_ram/
 scripts/
   run_all.sh
   run_all.ps1
