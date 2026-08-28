@@ -179,6 +179,12 @@ $tests = @(
         Rtl = "examples/29_simple_alu/simple_alu.sv"
         Testbench = "examples/29_simple_alu/tb_simple_alu.sv"
         Top = "tb_simple_alu"
+    },
+    @{
+        Name = "register_file"
+        Rtl = "examples/30_register_file/register_file.sv"
+        Testbench = "examples/30_register_file/tb_register_file.sv"
+        Top = "tb_register_file"
     }
 )
 

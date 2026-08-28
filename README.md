@@ -37,6 +37,7 @@ finishes with either a clear `PASS` message or an error.
 | 27 | UART receiver | Sampling a UART frame and reporting valid data or a bad stop bit |
 | 28 | Single-port RAM | Storing words on clocked writes and reading the selected address asynchronously |
 | 29 | Simple ALU | Selecting arithmetic, logic, and shift operations with a combinational case statement |
+| 30 | Register file | Writing one register on a clock edge while reading two registers independently |
 
 ## Repository Structure
 
@@ -71,6 +72,7 @@ examples/
   27_uart_receiver/
   28_single_port_ram/
   29_simple_alu/
+  30_register_file/
 scripts/
   run_all.sh
   run_all.ps1

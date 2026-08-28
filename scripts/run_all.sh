@@ -167,4 +167,9 @@ run_test "simple_alu" \
   "examples/29_simple_alu/tb_simple_alu.sv" \
   "tb_simple_alu"
 
+run_test "register_file" \
+  "examples/30_register_file/register_file.sv" \
+  "examples/30_register_file/tb_register_file.sv" \
+  "tb_register_file"
+
 echo "All RTL simulations passed."
