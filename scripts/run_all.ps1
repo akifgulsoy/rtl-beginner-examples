@@ -185,6 +185,12 @@ $tests = @(
         Rtl = "examples/30_register_file/register_file.sv"
         Testbench = "examples/30_register_file/tb_register_file.sv"
         Top = "tb_register_file"
+    },
+    @{
+        Name = "leading_zero_counter"
+        Rtl = "examples/31_leading_zero_counter/leading_zero_counter.sv"
+        Testbench = "examples/31_leading_zero_counter/tb_leading_zero_counter.sv"
+        Top = "tb_leading_zero_counter"
     }
 )
 

@@ -38,6 +38,7 @@ finishes with either a clear `PASS` message or an error.
 | 28 | Single-port RAM | Storing words on clocked writes and reading the selected address asynchronously |
 | 29 | Simple ALU | Selecting arithmetic, logic, and shift operations with a combinational case statement |
 | 30 | Register file | Writing one register on a clock edge while reading two registers independently |
+| 31 | Leading-zero counter | Finding the distance from the most-significant bit to the first one |
 
 ## Repository Structure
 
@@ -73,6 +74,7 @@ examples/
   28_single_port_ram/
   29_simple_alu/
   30_register_file/
+  31_leading_zero_counter/
 scripts/
   run_all.sh
   run_all.ps1

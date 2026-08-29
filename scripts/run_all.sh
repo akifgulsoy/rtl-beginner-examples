@@ -172,4 +172,9 @@ run_test "register_file" \
   "examples/30_register_file/tb_register_file.sv" \
   "tb_register_file"
 
+run_test "leading_zero_counter" \
+  "examples/31_leading_zero_counter/leading_zero_counter.sv" \
+  "examples/31_leading_zero_counter/tb_leading_zero_counter.sv" \
+  "tb_leading_zero_counter"
+
 echo "All RTL simulations passed."
