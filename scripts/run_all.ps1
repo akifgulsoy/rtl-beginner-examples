@@ -191,6 +191,12 @@ $tests = @(
         Rtl = "examples/31_leading_zero_counter/leading_zero_counter.sv"
         Testbench = "examples/31_leading_zero_counter/tb_leading_zero_counter.sv"
         Top = "tb_leading_zero_counter"
+    },
+    @{
+        Name = "accumulator"
+        Rtl = "examples/32_accumulator/accumulator.sv"
+        Testbench = "examples/32_accumulator/tb_accumulator.sv"
+        Top = "tb_accumulator"
     }
 )
 

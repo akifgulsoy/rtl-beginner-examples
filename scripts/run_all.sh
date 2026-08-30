@@ -177,4 +177,9 @@ run_test "leading_zero_counter" \
   "examples/31_leading_zero_counter/tb_leading_zero_counter.sv" \
   "tb_leading_zero_counter"
 
+run_test "accumulator" \
+  "examples/32_accumulator/accumulator.sv" \
+  "examples/32_accumulator/tb_accumulator.sv" \
+  "tb_accumulator"
+
 echo "All RTL simulations passed."
