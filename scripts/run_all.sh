@@ -182,4 +182,9 @@ run_test "accumulator" \
   "examples/32_accumulator/tb_accumulator.sv" \
   "tb_accumulator"
 
+run_test "parallel_to_serial" \
+  "examples/33_parallel_to_serial/parallel_to_serial.sv" \
+  "examples/33_parallel_to_serial/tb_parallel_to_serial.sv" \
+  "tb_parallel_to_serial"
+
 echo "All RTL simulations passed."

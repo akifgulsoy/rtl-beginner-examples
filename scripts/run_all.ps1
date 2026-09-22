@@ -197,6 +197,12 @@ $tests = @(
         Rtl = "examples/32_accumulator/accumulator.sv"
         Testbench = "examples/32_accumulator/tb_accumulator.sv"
         Top = "tb_accumulator"
+    },
+    @{
+        Name = "parallel_to_serial"
+        Rtl = "examples/33_parallel_to_serial/parallel_to_serial.sv"
+        Testbench = "examples/33_parallel_to_serial/tb_parallel_to_serial.sv"
+        Top = "tb_parallel_to_serial"
     }
 )
 

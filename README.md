@@ -40,6 +40,7 @@ finishes with either a clear `PASS` message or an error.
 | 30 | Register file | Writing one register on a clock edge while reading two registers independently |
 | 31 | Leading-zero counter | Finding the distance from the most-significant bit to the first one |
 | 32 | Accumulator | Adding enabled input values into a running, clocked total |
+| 33 | Parallel-to-serial register | Loading a word then shifting its least-significant bit out first |
 
 ## Repository Structure
 
@@ -77,6 +78,7 @@ examples/
   30_register_file/
   31_leading_zero_counter/
   32_accumulator/
+  33_parallel_to_serial/
 scripts/
   run_all.sh
   run_all.ps1
