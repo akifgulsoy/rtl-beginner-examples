@@ -203,6 +203,12 @@ $tests = @(
         Rtl = "examples/33_parallel_to_serial/parallel_to_serial.sv"
         Testbench = "examples/33_parallel_to_serial/tb_parallel_to_serial.sv"
         Top = "tb_parallel_to_serial"
+    },
+    @{
+        Name = "serial_to_parallel"
+        Rtl = "examples/34_serial_to_parallel/serial_to_parallel.sv"
+        Testbench = "examples/34_serial_to_parallel/tb_serial_to_parallel.sv"
+        Top = "tb_serial_to_parallel"
     }
 )
 

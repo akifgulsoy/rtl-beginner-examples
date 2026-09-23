@@ -187,4 +187,9 @@ run_test "parallel_to_serial" \
   "examples/33_parallel_to_serial/tb_parallel_to_serial.sv" \
   "tb_parallel_to_serial"
 
+run_test "serial_to_parallel" \
+  "examples/34_serial_to_parallel/serial_to_parallel.sv" \
+  "examples/34_serial_to_parallel/tb_serial_to_parallel.sv" \
+  "tb_serial_to_parallel"
+
 echo "All RTL simulations passed."
