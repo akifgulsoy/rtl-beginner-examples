@@ -42,6 +42,7 @@ finishes with either a clear `PASS` message or an error.
 | 32 | Accumulator | Adding enabled input values into a running, clocked total |
 | 33 | Parallel-to-serial register | Loading a word then shifting its least-significant bit out first |
 | 34 | Serial-to-parallel register | Shifting least-significant-bit-first data into a completed word |
+| 35 | Valid-ready register | Buffering one data word while applying backpressure to its source |
 
 ## Repository Structure
 
@@ -81,6 +82,7 @@ examples/
   32_accumulator/
   33_parallel_to_serial/
   34_serial_to_parallel/
+  35_valid_ready_register/
 scripts/
   run_all.sh
   run_all.ps1

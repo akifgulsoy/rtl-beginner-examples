@@ -192,4 +192,9 @@ run_test "serial_to_parallel" \
   "examples/34_serial_to_parallel/tb_serial_to_parallel.sv" \
   "tb_serial_to_parallel"
 
+run_test "valid_ready_register" \
+  "examples/35_valid_ready_register/valid_ready_register.sv" \
+  "examples/35_valid_ready_register/tb_valid_ready_register.sv" \
+  "tb_valid_ready_register"
+
 echo "All RTL simulations passed."

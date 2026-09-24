@@ -209,6 +209,12 @@ $tests = @(
         Rtl = "examples/34_serial_to_parallel/serial_to_parallel.sv"
         Testbench = "examples/34_serial_to_parallel/tb_serial_to_parallel.sv"
         Top = "tb_serial_to_parallel"
+    },
+    @{
+        Name = "valid_ready_register"
+        Rtl = "examples/35_valid_ready_register/valid_ready_register.sv"
+        Testbench = "examples/35_valid_ready_register/tb_valid_ready_register.sv"
+        Top = "tb_valid_ready_register"
     }
 )
 
