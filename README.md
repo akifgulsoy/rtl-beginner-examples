@@ -43,6 +43,7 @@ finishes with either a clear `PASS` message or an error.
 | 33 | Parallel-to-serial register | Loading a word then shifting its least-significant bit out first |
 | 34 | Serial-to-parallel register | Shifting least-significant-bit-first data into a completed word |
 | 35 | Valid-ready register | Buffering one data word while applying backpressure to its source |
+| 36 | Toggle event synchronizer | Transferring a one-cycle event safely between unrelated clock domains |
 
 ## Repository Structure
 
@@ -83,6 +84,7 @@ examples/
   33_parallel_to_serial/
   34_serial_to_parallel/
   35_valid_ready_register/
+  36_toggle_event_synchronizer/
 scripts/
   run_all.sh
   run_all.ps1

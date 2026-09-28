@@ -215,6 +215,12 @@ $tests = @(
         Rtl = "examples/35_valid_ready_register/valid_ready_register.sv"
         Testbench = "examples/35_valid_ready_register/tb_valid_ready_register.sv"
         Top = "tb_valid_ready_register"
+    },
+    @{
+        Name = "toggle_event_synchronizer"
+        Rtl = "examples/36_toggle_event_synchronizer/toggle_event_synchronizer.sv"
+        Testbench = "examples/36_toggle_event_synchronizer/tb_toggle_event_synchronizer.sv"
+        Top = "tb_toggle_event_synchronizer"
     }
 )
 

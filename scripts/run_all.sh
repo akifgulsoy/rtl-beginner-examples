@@ -197,4 +197,9 @@ run_test "valid_ready_register" \
   "examples/35_valid_ready_register/tb_valid_ready_register.sv" \
   "tb_valid_ready_register"
 
+run_test "toggle_event_synchronizer" \
+  "examples/36_toggle_event_synchronizer/toggle_event_synchronizer.sv" \
+  "examples/36_toggle_event_synchronizer/tb_toggle_event_synchronizer.sv" \
+  "tb_toggle_event_synchronizer"
+
 echo "All RTL simulations passed."
