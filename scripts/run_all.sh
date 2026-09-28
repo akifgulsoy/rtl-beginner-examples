@@ -202,4 +202,9 @@ run_test "toggle_event_synchronizer" \
   "examples/36_toggle_event_synchronizer/tb_toggle_event_synchronizer.sv" \
   "tb_toggle_event_synchronizer"
 
+run_test "reset_synchronizer" \
+  "examples/37_reset_synchronizer/reset_synchronizer.sv" \
+  "examples/37_reset_synchronizer/tb_reset_synchronizer.sv" \
+  "tb_reset_synchronizer"
+
 echo "All RTL simulations passed."
