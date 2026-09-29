@@ -207,4 +207,9 @@ run_test "reset_synchronizer" \
   "examples/37_reset_synchronizer/tb_reset_synchronizer.sv" \
   "tb_reset_synchronizer"
 
+run_test "request_ack_synchronizer" \
+  "examples/38_request_ack_synchronizer/request_ack_synchronizer.sv" \
+  "examples/38_request_ack_synchronizer/tb_request_ack_synchronizer.sv" \
+  "tb_request_ack_synchronizer"
+
 echo "All RTL simulations passed."

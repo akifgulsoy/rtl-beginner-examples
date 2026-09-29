@@ -227,6 +227,12 @@ $tests = @(
         Rtl = "examples/37_reset_synchronizer/reset_synchronizer.sv"
         Testbench = "examples/37_reset_synchronizer/tb_reset_synchronizer.sv"
         Top = "tb_reset_synchronizer"
+    },
+    @{
+        Name = "request_ack_synchronizer"
+        Rtl = "examples/38_request_ack_synchronizer/request_ack_synchronizer.sv"
+        Testbench = "examples/38_request_ack_synchronizer/tb_request_ack_synchronizer.sv"
+        Top = "tb_request_ack_synchronizer"
     }
 )
 

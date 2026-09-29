@@ -45,6 +45,7 @@ finishes with either a clear `PASS` message or an error.
 | 35 | Valid-ready register | Buffering one data word while applying backpressure to its source |
 | 36 | Toggle event synchronizer | Transferring a one-cycle event safely between unrelated clock domains |
 | 37 | Reset synchronizer | Asserting reset immediately while releasing it safely on clock edges |
+| 38 | Request/acknowledgement synchronizer | Reliably transferring one event at a time between unrelated clock domains |
 
 ## Repository Structure
 
@@ -87,6 +88,7 @@ examples/
   35_valid_ready_register/
   36_toggle_event_synchronizer/
   37_reset_synchronizer/
+  38_request_ack_synchronizer/
 scripts/
   run_all.sh
   run_all.ps1
