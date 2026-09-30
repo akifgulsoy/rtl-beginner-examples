@@ -212,4 +212,9 @@ run_test "request_ack_synchronizer" \
   "examples/38_request_ack_synchronizer/tb_request_ack_synchronizer.sv" \
   "tb_request_ack_synchronizer"
 
+run_test "crc8_serial" \
+  "examples/39_crc8_serial/crc8_serial.sv" \
+  "examples/39_crc8_serial/tb_crc8_serial.sv" \
+  "tb_crc8_serial"
+
 echo "All RTL simulations passed."

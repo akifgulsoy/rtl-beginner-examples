@@ -233,6 +233,12 @@ $tests = @(
         Rtl = "examples/38_request_ack_synchronizer/request_ack_synchronizer.sv"
         Testbench = "examples/38_request_ack_synchronizer/tb_request_ack_synchronizer.sv"
         Top = "tb_request_ack_synchronizer"
+    },
+    @{
+        Name = "crc8_serial"
+        Rtl = "examples/39_crc8_serial/crc8_serial.sv"
+        Testbench = "examples/39_crc8_serial/tb_crc8_serial.sv"
+        Top = "tb_crc8_serial"
     }
 )
 
