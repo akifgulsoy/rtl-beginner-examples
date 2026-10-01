@@ -47,6 +47,7 @@ finishes with either a clear `PASS` message or an error.
 | 37 | Reset synchronizer | Asserting reset immediately while releasing it safely on clock edges |
 | 38 | Request/acknowledgement synchronizer | Reliably transferring one event at a time between unrelated clock domains |
 | 39 | Serial CRC-8 | Updating an error-detecting checksum one MSB-first bit at a time |
+| 40 | Population counter | Counting the asserted bits in a word with a combinational loop |
 
 ## Repository Structure
 
@@ -91,6 +92,7 @@ examples/
   37_reset_synchronizer/
   38_request_ack_synchronizer/
   39_crc8_serial/
+  40_population_counter/
 scripts/
   run_all.sh
   run_all.ps1

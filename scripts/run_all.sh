@@ -217,4 +217,9 @@ run_test "crc8_serial" \
   "examples/39_crc8_serial/tb_crc8_serial.sv" \
   "tb_crc8_serial"
 
+run_test "population_counter" \
+  "examples/40_population_counter/population_counter.sv" \
+  "examples/40_population_counter/tb_population_counter.sv" \
+  "tb_population_counter"
+
 echo "All RTL simulations passed."
