@@ -48,6 +48,7 @@ finishes with either a clear `PASS` message or an error.
 | 38 | Request/acknowledgement synchronizer | Reliably transferring one event at a time between unrelated clock domains |
 | 39 | Serial CRC-8 | Updating an error-detecting checksum one MSB-first bit at a time |
 | 40 | Population counter | Counting the asserted bits in a word with a combinational loop |
+| 41 | Linear-feedback shift register | Generating a repeatable pseudo-random sequence with XOR feedback |
 
 ## Repository Structure
 
@@ -93,6 +94,7 @@ examples/
   38_request_ack_synchronizer/
   39_crc8_serial/
   40_population_counter/
+  41_lfsr/
 scripts/
   run_all.sh
   run_all.ps1

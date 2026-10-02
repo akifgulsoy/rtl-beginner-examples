@@ -222,4 +222,9 @@ run_test "population_counter" \
   "examples/40_population_counter/tb_population_counter.sv" \
   "tb_population_counter"
 
+run_test "lfsr" \
+  "examples/41_lfsr/lfsr.sv" \
+  "examples/41_lfsr/tb_lfsr.sv" \
+  "tb_lfsr"
+
 echo "All RTL simulations passed."

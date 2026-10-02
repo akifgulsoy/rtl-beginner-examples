@@ -245,6 +245,12 @@ $tests = @(
         Rtl = "examples/40_population_counter/population_counter.sv"
         Testbench = "examples/40_population_counter/tb_population_counter.sv"
         Top = "tb_population_counter"
+    },
+    @{
+        Name = "lfsr"
+        Rtl = "examples/41_lfsr/lfsr.sv"
+        Testbench = "examples/41_lfsr/tb_lfsr.sv"
+        Top = "tb_lfsr"
     }
 )
 
