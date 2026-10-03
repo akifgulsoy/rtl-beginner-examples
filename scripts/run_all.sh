@@ -227,4 +227,9 @@ run_test "lfsr" \
   "examples/41_lfsr/tb_lfsr.sv" \
   "tb_lfsr"
 
+run_test "gray_to_binary" \
+  "examples/42_gray_to_binary/gray_to_binary.sv" \
+  "examples/42_gray_to_binary/tb_gray_to_binary.sv" \
+  "tb_gray_to_binary"
+
 echo "All RTL simulations passed."

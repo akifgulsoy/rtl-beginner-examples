@@ -49,6 +49,7 @@ finishes with either a clear `PASS` message or an error.
 | 39 | Serial CRC-8 | Updating an error-detecting checksum one MSB-first bit at a time |
 | 40 | Population counter | Counting the asserted bits in a word with a combinational loop |
 | 41 | Linear-feedback shift register | Generating a repeatable pseudo-random sequence with XOR feedback |
+| 42 | Gray-to-binary converter | Decoding a Gray-coded value with a cumulative XOR chain |
 
 ## Repository Structure
 
@@ -95,6 +96,7 @@ examples/
   39_crc8_serial/
   40_population_counter/
   41_lfsr/
+  42_gray_to_binary/
 scripts/
   run_all.sh
   run_all.ps1

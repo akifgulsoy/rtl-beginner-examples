@@ -251,6 +251,12 @@ $tests = @(
         Rtl = "examples/41_lfsr/lfsr.sv"
         Testbench = "examples/41_lfsr/tb_lfsr.sv"
         Top = "tb_lfsr"
+    },
+    @{
+        Name = "gray_to_binary"
+        Rtl = "examples/42_gray_to_binary/gray_to_binary.sv"
+        Testbench = "examples/42_gray_to_binary/tb_gray_to_binary.sv"
+        Top = "tb_gray_to_binary"
     }
 )
 
