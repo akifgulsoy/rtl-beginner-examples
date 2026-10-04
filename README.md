@@ -50,6 +50,7 @@ finishes with either a clear `PASS` message or an error.
 | 40 | Population counter | Counting the asserted bits in a word with a combinational loop |
 | 41 | Linear-feedback shift register | Generating a repeatable pseudo-random sequence with XOR feedback |
 | 42 | Gray-to-binary converter | Decoding a Gray-coded value with a cumulative XOR chain |
+| 43 | Watchdog timer | Detecting a missing periodic service event after a fixed interval |
 
 ## Repository Structure
 
@@ -97,6 +98,7 @@ examples/
   40_population_counter/
   41_lfsr/
   42_gray_to_binary/
+  43_watchdog_timer/
 scripts/
   run_all.sh
   run_all.ps1

@@ -232,4 +232,9 @@ run_test "gray_to_binary" \
   "examples/42_gray_to_binary/tb_gray_to_binary.sv" \
   "tb_gray_to_binary"
 
+run_test "watchdog_timer" \
+  "examples/43_watchdog_timer/watchdog_timer.sv" \
+  "examples/43_watchdog_timer/tb_watchdog_timer.sv" \
+  "tb_watchdog_timer"
+
 echo "All RTL simulations passed."

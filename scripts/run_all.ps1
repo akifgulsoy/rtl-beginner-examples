@@ -257,6 +257,12 @@ $tests = @(
         Rtl = "examples/42_gray_to_binary/gray_to_binary.sv"
         Testbench = "examples/42_gray_to_binary/tb_gray_to_binary.sv"
         Top = "tb_gray_to_binary"
+    },
+    @{
+        Name = "watchdog_timer"
+        Rtl = "examples/43_watchdog_timer/watchdog_timer.sv"
+        Testbench = "examples/43_watchdog_timer/tb_watchdog_timer.sv"
+        Top = "tb_watchdog_timer"
     }
 )
 
