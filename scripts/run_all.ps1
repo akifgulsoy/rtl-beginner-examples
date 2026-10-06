@@ -263,6 +263,12 @@ $tests = @(
         Rtl = "examples/43_watchdog_timer/watchdog_timer.sv"
         Testbench = "examples/43_watchdog_timer/tb_watchdog_timer.sv"
         Top = "tb_watchdog_timer"
+    },
+    @{
+        Name = "clock_divider"
+        Rtl = "examples/44_clock_divider/clock_divider.sv"
+        Testbench = "examples/44_clock_divider/tb_clock_divider.sv"
+        Top = "tb_clock_divider"
     }
 )
 

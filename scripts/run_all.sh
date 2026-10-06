@@ -237,4 +237,9 @@ run_test "watchdog_timer" \
   "examples/43_watchdog_timer/tb_watchdog_timer.sv" \
   "tb_watchdog_timer"
 
+run_test "clock_divider" \
+  "examples/44_clock_divider/clock_divider.sv" \
+  "examples/44_clock_divider/tb_clock_divider.sv" \
+  "tb_clock_divider"
+
 echo "All RTL simulations passed."

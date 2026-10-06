@@ -51,6 +51,7 @@ finishes with either a clear `PASS` message or an error.
 | 41 | Linear-feedback shift register | Generating a repeatable pseudo-random sequence with XOR feedback |
 | 42 | Gray-to-binary converter | Decoding a Gray-coded value with a cumulative XOR chain |
 | 43 | Watchdog timer | Detecting a missing periodic service event after a fixed interval |
+| 44 | Clock divider | Toggling a slower square wave after a programmable number of input-clock edges |
 
 ## Repository Structure
 
@@ -99,6 +100,7 @@ examples/
   41_lfsr/
   42_gray_to_binary/
   43_watchdog_timer/
+  44_clock_divider/
 scripts/
   run_all.sh
   run_all.ps1
