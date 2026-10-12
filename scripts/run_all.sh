@@ -242,4 +242,9 @@ run_test "clock_divider" \
   "examples/44_clock_divider/tb_clock_divider.sv" \
   "tb_clock_divider"
 
+run_test "synchronous_rom" \
+  "examples/45_synchronous_rom/synchronous_rom.sv" \
+  "examples/45_synchronous_rom/tb_synchronous_rom.sv" \
+  "tb_synchronous_rom"
+
 echo "All RTL simulations passed."

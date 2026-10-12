@@ -269,6 +269,12 @@ $tests = @(
         Rtl = "examples/44_clock_divider/clock_divider.sv"
         Testbench = "examples/44_clock_divider/tb_clock_divider.sv"
         Top = "tb_clock_divider"
+    },
+    @{
+        Name = "synchronous_rom"
+        Rtl = "examples/45_synchronous_rom/synchronous_rom.sv"
+        Testbench = "examples/45_synchronous_rom/tb_synchronous_rom.sv"
+        Top = "tb_synchronous_rom"
     }
 )
 

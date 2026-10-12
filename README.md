@@ -52,6 +52,7 @@ finishes with either a clear `PASS` message or an error.
 | 42 | Gray-to-binary converter | Decoding a Gray-coded value with a cumulative XOR chain |
 | 43 | Watchdog timer | Detecting a missing periodic service event after a fixed interval |
 | 44 | Clock divider | Toggling a slower square wave after a programmable number of input-clock edges |
+| 45 | Synchronous ROM | Reading fixed data on a clock edge to model a one-clock-latency memory |
 
 ## Repository Structure
 
@@ -101,6 +102,7 @@ examples/
   42_gray_to_binary/
   43_watchdog_timer/
   44_clock_divider/
+  45_synchronous_rom/
 scripts/
   run_all.sh
   run_all.ps1
