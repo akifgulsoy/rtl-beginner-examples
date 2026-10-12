@@ -53,6 +53,7 @@ finishes with either a clear `PASS` message or an error.
 | 43 | Watchdog timer | Detecting a missing periodic service event after a fixed interval |
 | 44 | Clock divider | Toggling a slower square wave after a programmable number of input-clock edges |
 | 45 | Synchronous ROM | Reading fixed data on a clock edge to model a one-clock-latency memory |
+| 46 | One-shot timer | Counting a requested delay then producing a one-clock completion pulse |
 
 ## Repository Structure
 
@@ -103,6 +104,7 @@ examples/
   43_watchdog_timer/
   44_clock_divider/
   45_synchronous_rom/
+  46_one_shot_timer/
 scripts/
   run_all.sh
   run_all.ps1

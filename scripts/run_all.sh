@@ -247,4 +247,9 @@ run_test "synchronous_rom" \
   "examples/45_synchronous_rom/tb_synchronous_rom.sv" \
   "tb_synchronous_rom"
 
+run_test "one_shot_timer" \
+  "examples/46_one_shot_timer/one_shot_timer.sv" \
+  "examples/46_one_shot_timer/tb_one_shot_timer.sv" \
+  "tb_one_shot_timer"
+
 echo "All RTL simulations passed."
