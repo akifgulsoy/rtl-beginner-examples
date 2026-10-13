@@ -54,6 +54,7 @@ finishes with either a clear `PASS` message or an error.
 | 44 | Clock divider | Toggling a slower square wave after a programmable number of input-clock edges |
 | 45 | Synchronous ROM | Reading fixed data on a clock edge to model a one-clock-latency memory |
 | 46 | One-shot timer | Counting a requested delay then producing a one-clock completion pulse |
+| 47 | Modulo counter | Counting through a configured maximum then wrapping back to zero |
 
 ## Repository Structure
 
@@ -105,6 +106,7 @@ examples/
   44_clock_divider/
   45_synchronous_rom/
   46_one_shot_timer/
+  47_modulo_counter/
 scripts/
   run_all.sh
   run_all.ps1

@@ -282,6 +282,12 @@ $tests = @(
         Testbench = "examples/46_one_shot_timer/tb_one_shot_timer.sv"
         Top = "tb_one_shot_timer"
     }
+    ,@{
+        Name = "modulo_counter"
+        Rtl = "examples/47_modulo_counter/modulo_counter.sv"
+        Testbench = "examples/47_modulo_counter/tb_modulo_counter.sv"
+        Top = "tb_modulo_counter"
+    }
 )
 
 foreach ($test in $tests) {

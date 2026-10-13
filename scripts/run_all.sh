@@ -252,4 +252,9 @@ run_test "one_shot_timer" \
   "examples/46_one_shot_timer/tb_one_shot_timer.sv" \
   "tb_one_shot_timer"
 
+run_test "modulo_counter" \
+    "examples/47_modulo_counter/modulo_counter.sv" \
+    "examples/47_modulo_counter/tb_modulo_counter.sv" \
+    "tb_modulo_counter"
+
 echo "All RTL simulations passed."
