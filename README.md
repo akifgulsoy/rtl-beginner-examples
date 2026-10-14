@@ -55,6 +55,7 @@ finishes with either a clear `PASS` message or an error.
 | 45 | Synchronous ROM | Reading fixed data on a clock edge to model a one-clock-latency memory |
 | 46 | One-shot timer | Counting a requested delay then producing a one-clock completion pulse |
 | 47 | Modulo counter | Counting through a configured maximum then wrapping back to zero |
+| 48 | Pulse-width measurement | Counting the sampled high cycles of an input pulse and reporting when its width is ready |
 
 ## Repository Structure
 
@@ -107,6 +108,7 @@ examples/
   45_synchronous_rom/
   46_one_shot_timer/
   47_modulo_counter/
+  48_pulse_width_measurement/
 scripts/
   run_all.sh
   run_all.ps1

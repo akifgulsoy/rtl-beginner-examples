@@ -288,6 +288,12 @@ $tests = @(
         Testbench = "examples/47_modulo_counter/tb_modulo_counter.sv"
         Top = "tb_modulo_counter"
     }
+    ,@{
+        Name = "pulse_width_measurement"
+        Rtl = "examples/48_pulse_width_measurement/pulse_width_measurement.sv"
+        Testbench = "examples/48_pulse_width_measurement/tb_pulse_width_measurement.sv"
+        Top = "tb_pulse_width_measurement"
+    }
 )
 
 foreach ($test in $tests) {

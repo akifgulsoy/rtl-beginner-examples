@@ -257,4 +257,9 @@ run_test "modulo_counter" \
     "examples/47_modulo_counter/tb_modulo_counter.sv" \
     "tb_modulo_counter"
 
+run_test "pulse_width_measurement" \
+    "examples/48_pulse_width_measurement/pulse_width_measurement.sv" \
+    "examples/48_pulse_width_measurement/tb_pulse_width_measurement.sv" \
+    "tb_pulse_width_measurement"
+
 echo "All RTL simulations passed."
