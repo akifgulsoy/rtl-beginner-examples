@@ -262,4 +262,9 @@ run_test "pulse_width_measurement" \
     "examples/48_pulse_width_measurement/tb_pulse_width_measurement.sv" \
     "tb_pulse_width_measurement"
 
+run_test "sticky_status_register" \
+    "examples/49_sticky_status_register/sticky_status_register.sv" \
+    "examples/49_sticky_status_register/tb_sticky_status_register.sv" \
+    "tb_sticky_status_register"
+
 echo "All RTL simulations passed."

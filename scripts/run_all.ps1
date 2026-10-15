@@ -294,6 +294,12 @@ $tests = @(
         Testbench = "examples/48_pulse_width_measurement/tb_pulse_width_measurement.sv"
         Top = "tb_pulse_width_measurement"
     }
+    ,@{
+        Name = "sticky_status_register"
+        Rtl = "examples/49_sticky_status_register/sticky_status_register.sv"
+        Testbench = "examples/49_sticky_status_register/tb_sticky_status_register.sv"
+        Top = "tb_sticky_status_register"
+    }
 )
 
 foreach ($test in $tests) {

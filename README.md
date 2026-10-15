@@ -56,6 +56,7 @@ finishes with either a clear `PASS` message or an error.
 | 46 | One-shot timer | Counting a requested delay then producing a one-clock completion pulse |
 | 47 | Modulo counter | Counting through a configured maximum then wrapping back to zero |
 | 48 | Pulse-width measurement | Counting the sampled high cycles of an input pulse and reporting when its width is ready |
+| 49 | Sticky status register | Remembering hardware events until software clears their individual status bits |
 
 ## Repository Structure
 
@@ -109,6 +110,7 @@ examples/
   46_one_shot_timer/
   47_modulo_counter/
   48_pulse_width_measurement/
+  49_sticky_status_register/
 scripts/
   run_all.sh
   run_all.ps1
