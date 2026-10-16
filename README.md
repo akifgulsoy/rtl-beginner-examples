@@ -57,6 +57,7 @@ finishes with either a clear `PASS` message or an error.
 | 47 | Modulo counter | Counting through a configured maximum then wrapping back to zero |
 | 48 | Pulse-width measurement | Counting the sampled high cycles of an input pulse and reporting when its width is ready |
 | 49 | Sticky status register | Remembering hardware events until software clears their individual status bits |
+| 50 | Hysteresis comparator | Holding an alert between separate assert and deassert thresholds to reject boundary noise |
 
 ## Repository Structure
 
@@ -111,6 +112,7 @@ examples/
   47_modulo_counter/
   48_pulse_width_measurement/
   49_sticky_status_register/
+  50_hysteresis_comparator/
 scripts/
   run_all.sh
   run_all.ps1

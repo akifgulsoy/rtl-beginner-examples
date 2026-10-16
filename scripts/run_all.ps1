@@ -300,6 +300,12 @@ $tests = @(
         Testbench = "examples/49_sticky_status_register/tb_sticky_status_register.sv"
         Top = "tb_sticky_status_register"
     }
+    ,@{
+        Name = "hysteresis_comparator"
+        Rtl = "examples/50_hysteresis_comparator/hysteresis_comparator.sv"
+        Testbench = "examples/50_hysteresis_comparator/tb_hysteresis_comparator.sv"
+        Top = "tb_hysteresis_comparator"
+    }
 )
 
 foreach ($test in $tests) {
