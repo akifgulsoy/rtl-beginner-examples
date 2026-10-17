@@ -272,4 +272,9 @@ run_test "hysteresis_comparator" \
     "examples/50_hysteresis_comparator/tb_hysteresis_comparator.sv" \
     "tb_hysteresis_comparator"
 
+run_test "majority_voter" \
+    "examples/51_majority_voter/majority_voter.sv" \
+    "examples/51_majority_voter/tb_majority_voter.sv" \
+    "tb_majority_voter"
+
 echo "All RTL simulations passed."
