@@ -277,4 +277,9 @@ run_test "majority_voter" \
     "examples/51_majority_voter/tb_majority_voter.sv" \
     "tb_majority_voter"
 
+run_test "signed_saturating_adder" \
+    "examples/52_signed_saturating_adder/signed_saturating_adder.sv" \
+    "examples/52_signed_saturating_adder/tb_signed_saturating_adder.sv" \
+    "tb_signed_saturating_adder"
+
 echo "All RTL simulations passed."

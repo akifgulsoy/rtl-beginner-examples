@@ -312,6 +312,12 @@ $tests = @(
         Testbench = "examples/51_majority_voter/tb_majority_voter.sv"
         Top = "tb_majority_voter"
     }
+    ,@{
+        Name = "signed_saturating_adder"
+        Rtl = "examples/52_signed_saturating_adder/signed_saturating_adder.sv"
+        Testbench = "examples/52_signed_saturating_adder/tb_signed_saturating_adder.sv"
+        Top = "tb_signed_saturating_adder"
+    }
 )
 
 foreach ($test in $tests) {
