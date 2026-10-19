@@ -318,6 +318,12 @@ $tests = @(
         Testbench = "examples/52_signed_saturating_adder/tb_signed_saturating_adder.sv"
         Top = "tb_signed_saturating_adder"
     }
+    ,@{
+        Name = "ripple_carry_adder"
+        Rtl = "examples/53_ripple_carry_adder/ripple_carry_adder.sv"
+        Testbench = "examples/53_ripple_carry_adder/tb_ripple_carry_adder.sv"
+        Top = "tb_ripple_carry_adder"
+    }
 )
 
 foreach ($test in $tests) {

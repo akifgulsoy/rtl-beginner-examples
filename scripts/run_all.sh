@@ -282,4 +282,9 @@ run_test "signed_saturating_adder" \
     "examples/52_signed_saturating_adder/tb_signed_saturating_adder.sv" \
     "tb_signed_saturating_adder"
 
+run_test "ripple_carry_adder" \
+    "examples/53_ripple_carry_adder/ripple_carry_adder.sv" \
+    "examples/53_ripple_carry_adder/tb_ripple_carry_adder.sv" \
+    "tb_ripple_carry_adder"
+
 echo "All RTL simulations passed."
