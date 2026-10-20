@@ -61,6 +61,7 @@ finishes with either a clear `PASS` message or an error.
 | 51 | Majority voter | Selecting each output bit from the majority of three independent inputs |
 | 52 | Signed saturating adder | Clamping signed addition to the representable range instead of wrapping on overflow |
 | 53 | Ripple-carry adder | Chaining full adders to propagate a carry across a word |
+| 54 | Carry-lookahead adder | Computing carries from generate and propagate terms in parallel |
 
 ## Repository Structure
 
@@ -119,6 +120,7 @@ examples/
   51_majority_voter/
   52_signed_saturating_adder/
   53_ripple_carry_adder/
+  54_carry_lookahead_adder/
 scripts/
   run_all.sh
   run_all.ps1

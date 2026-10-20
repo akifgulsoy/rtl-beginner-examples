@@ -287,4 +287,9 @@ run_test "ripple_carry_adder" \
     "examples/53_ripple_carry_adder/tb_ripple_carry_adder.sv" \
     "tb_ripple_carry_adder"
 
+run_test "carry_lookahead_adder" \
+    "examples/54_carry_lookahead_adder/carry_lookahead_adder.sv" \
+    "examples/54_carry_lookahead_adder/tb_carry_lookahead_adder.sv" \
+    "tb_carry_lookahead_adder"
+
 echo "All RTL simulations passed."

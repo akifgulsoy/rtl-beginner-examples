@@ -324,6 +324,12 @@ $tests = @(
         Testbench = "examples/53_ripple_carry_adder/tb_ripple_carry_adder.sv"
         Top = "tb_ripple_carry_adder"
     }
+    ,@{
+        Name = "carry_lookahead_adder"
+        Rtl = "examples/54_carry_lookahead_adder/carry_lookahead_adder.sv"
+        Testbench = "examples/54_carry_lookahead_adder/tb_carry_lookahead_adder.sv"
+        Top = "tb_carry_lookahead_adder"
+    }
 )
 
 foreach ($test in $tests) {
