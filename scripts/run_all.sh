@@ -292,4 +292,9 @@ run_test "carry_lookahead_adder" \
     "examples/54_carry_lookahead_adder/tb_carry_lookahead_adder.sv" \
     "tb_carry_lookahead_adder"
 
+run_test "carry_select_adder" \
+    "examples/55_carry_select_adder/carry_select_adder.sv" \
+    "examples/55_carry_select_adder/tb_carry_select_adder.sv" \
+    "tb_carry_select_adder"
+
 echo "All RTL simulations passed."

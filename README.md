@@ -62,6 +62,7 @@ finishes with either a clear `PASS` message or an error.
 | 52 | Signed saturating adder | Clamping signed addition to the representable range instead of wrapping on overflow |
 | 53 | Ripple-carry adder | Chaining full adders to propagate a carry across a word |
 | 54 | Carry-lookahead adder | Computing carries from generate and propagate terms in parallel |
+| 55 | Carry-select adder | Precomputing upper-block sums for both carry values, then selecting one |
 
 ## Repository Structure
 
@@ -121,6 +122,7 @@ examples/
   52_signed_saturating_adder/
   53_ripple_carry_adder/
   54_carry_lookahead_adder/
+  55_carry_select_adder/
 scripts/
   run_all.sh
   run_all.ps1
