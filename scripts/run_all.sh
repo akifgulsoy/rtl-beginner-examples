@@ -297,4 +297,9 @@ run_test "carry_select_adder" \
     "examples/55_carry_select_adder/tb_carry_select_adder.sv" \
     "tb_carry_select_adder"
 
+run_test "shift_add_multiplier" \
+    "examples/56_shift_add_multiplier/shift_add_multiplier.sv" \
+    "examples/56_shift_add_multiplier/tb_shift_add_multiplier.sv" \
+    "tb_shift_add_multiplier"
+
 echo "All RTL simulations passed."

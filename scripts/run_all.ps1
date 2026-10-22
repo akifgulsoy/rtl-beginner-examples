@@ -336,6 +336,12 @@ $tests = @(
         Testbench = "examples/55_carry_select_adder/tb_carry_select_adder.sv"
         Top = "tb_carry_select_adder"
     }
+    ,@{
+        Name = "shift_add_multiplier"
+        Rtl = "examples/56_shift_add_multiplier/shift_add_multiplier.sv"
+        Testbench = "examples/56_shift_add_multiplier/tb_shift_add_multiplier.sv"
+        Top = "tb_shift_add_multiplier"
+    }
 )
 
 foreach ($test in $tests) {
