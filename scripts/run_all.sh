@@ -302,4 +302,9 @@ run_test "shift_add_multiplier" \
     "examples/56_shift_add_multiplier/tb_shift_add_multiplier.sv" \
     "tb_shift_add_multiplier"
 
+run_test "unsigned_divider" \
+    "examples/57_unsigned_divider/unsigned_divider.sv" \
+    "examples/57_unsigned_divider/tb_unsigned_divider.sv" \
+    "tb_unsigned_divider"
+
 echo "All RTL simulations passed."

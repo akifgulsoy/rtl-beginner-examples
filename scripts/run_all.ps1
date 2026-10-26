@@ -342,6 +342,12 @@ $tests = @(
         Testbench = "examples/56_shift_add_multiplier/tb_shift_add_multiplier.sv"
         Top = "tb_shift_add_multiplier"
     }
+    ,@{
+        Name = "unsigned_divider"
+        Rtl = "examples/57_unsigned_divider/unsigned_divider.sv"
+        Testbench = "examples/57_unsigned_divider/tb_unsigned_divider.sv"
+        Top = "tb_unsigned_divider"
+    }
 )
 
 foreach ($test in $tests) {

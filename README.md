@@ -64,6 +64,7 @@ finishes with either a clear `PASS` message or an error.
 | 54 | Carry-lookahead adder | Computing carries from generate and propagate terms in parallel |
 | 55 | Carry-select adder | Precomputing upper-block sums for both carry values, then selecting one |
 | 56 | Shift-and-add multiplier | Building an unsigned product from shifted partial sums |
+| 57 | Unsigned divider | Forming quotient and remainder by restoring division while flagging a zero divisor |
 
 ## Repository Structure
 
@@ -125,6 +126,7 @@ examples/
   54_carry_lookahead_adder/
   55_carry_select_adder/
   56_shift_add_multiplier/
+  57_unsigned_divider/
 scripts/
   run_all.sh
   run_all.ps1
