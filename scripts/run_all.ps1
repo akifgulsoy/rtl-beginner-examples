@@ -348,6 +348,12 @@ $tests = @(
         Testbench = "examples/57_unsigned_divider/tb_unsigned_divider.sv"
         Top = "tb_unsigned_divider"
     }
+    ,@{
+        Name = "binary_to_bcd"
+        Rtl = "examples/58_binary_to_bcd/binary_to_bcd.sv"
+        Testbench = "examples/58_binary_to_bcd/tb_binary_to_bcd.sv"
+        Top = "tb_binary_to_bcd"
+    }
 )
 
 foreach ($test in $tests) {

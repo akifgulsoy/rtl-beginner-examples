@@ -307,4 +307,9 @@ run_test "unsigned_divider" \
     "examples/57_unsigned_divider/tb_unsigned_divider.sv" \
     "tb_unsigned_divider"
 
+run_test "binary_to_bcd" \
+    "examples/58_binary_to_bcd/binary_to_bcd.sv" \
+    "examples/58_binary_to_bcd/tb_binary_to_bcd.sv" \
+    "tb_binary_to_bcd"
+
 echo "All RTL simulations passed."
