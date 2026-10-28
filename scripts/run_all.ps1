@@ -354,6 +354,12 @@ $tests = @(
         Testbench = "examples/58_binary_to_bcd/tb_binary_to_bcd.sv"
         Top = "tb_binary_to_bcd"
     }
+    ,@{
+        Name = "seven_segment_decoder"
+        Rtl = "examples/59_seven_segment_decoder/seven_segment_decoder.sv"
+        Testbench = "examples/59_seven_segment_decoder/tb_seven_segment_decoder.sv"
+        Top = "tb_seven_segment_decoder"
+    }
 )
 
 foreach ($test in $tests) {

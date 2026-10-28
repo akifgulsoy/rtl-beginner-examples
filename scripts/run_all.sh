@@ -312,4 +312,9 @@ run_test "binary_to_bcd" \
     "examples/58_binary_to_bcd/tb_binary_to_bcd.sv" \
     "tb_binary_to_bcd"
 
+run_test "seven_segment_decoder" \
+    "examples/59_seven_segment_decoder/seven_segment_decoder.sv" \
+    "examples/59_seven_segment_decoder/tb_seven_segment_decoder.sv" \
+    "tb_seven_segment_decoder"
+
 echo "All RTL simulations passed."

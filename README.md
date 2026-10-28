@@ -66,6 +66,7 @@ finishes with either a clear `PASS` message or an error.
 | 56 | Shift-and-add multiplier | Building an unsigned product from shifted partial sums |
 | 57 | Unsigned divider | Forming quotient and remainder by restoring division while flagging a zero divisor |
 | 58 | Binary-to-BCD converter | Converting a binary value to decimal-coded digits with shift-add-3 |
+| 59 | Seven-segment decoder | Displaying a BCD digit by selecting its active display segments |
 
 ## Repository Structure
 
@@ -129,6 +130,7 @@ examples/
   56_shift_add_multiplier/
   57_unsigned_divider/
   58_binary_to_bcd/
+  59_seven_segment_decoder/
 scripts/
   run_all.sh
   run_all.ps1
