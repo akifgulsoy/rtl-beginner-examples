@@ -317,4 +317,9 @@ run_test "seven_segment_decoder" \
     "examples/59_seven_segment_decoder/tb_seven_segment_decoder.sv" \
     "tb_seven_segment_decoder"
 
+run_test "spi_master_transmitter" \
+    "examples/60_spi_master_transmitter/spi_master_transmitter.sv" \
+    "examples/60_spi_master_transmitter/tb_spi_master_transmitter.sv" \
+    "tb_spi_master_transmitter"
+
 echo "All RTL simulations passed."

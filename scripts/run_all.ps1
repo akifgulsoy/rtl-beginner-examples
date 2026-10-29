@@ -360,6 +360,12 @@ $tests = @(
         Testbench = "examples/59_seven_segment_decoder/tb_seven_segment_decoder.sv"
         Top = "tb_seven_segment_decoder"
     }
+    ,@{
+        Name = "spi_master_transmitter"
+        Rtl = "examples/60_spi_master_transmitter/spi_master_transmitter.sv"
+        Testbench = "examples/60_spi_master_transmitter/tb_spi_master_transmitter.sv"
+        Top = "tb_spi_master_transmitter"
+    }
 )
 
 foreach ($test in $tests) {

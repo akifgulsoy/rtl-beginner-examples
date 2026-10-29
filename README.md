@@ -67,6 +67,7 @@ finishes with either a clear `PASS` message or an error.
 | 57 | Unsigned divider | Forming quotient and remainder by restoring division while flagging a zero divisor |
 | 58 | Binary-to-BCD converter | Converting a binary value to decimal-coded digits with shift-add-3 |
 | 59 | Seven-segment decoder | Displaying a BCD digit by selecting its active display segments |
+| 60 | SPI master transmitter | Sending a word MSB first with mode-0 clock and chip-select timing |
 
 ## Repository Structure
 
@@ -131,6 +132,7 @@ examples/
   57_unsigned_divider/
   58_binary_to_bcd/
   59_seven_segment_decoder/
+  60_spi_master_transmitter/
 scripts/
   run_all.sh
   run_all.ps1
