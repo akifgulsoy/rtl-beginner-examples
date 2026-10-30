@@ -68,6 +68,7 @@ finishes with either a clear `PASS` message or an error.
 | 58 | Binary-to-BCD converter | Converting a binary value to decimal-coded digits with shift-add-3 |
 | 59 | Seven-segment decoder | Displaying a BCD digit by selecting its active display segments |
 | 60 | SPI master transmitter | Sending a word MSB first with mode-0 clock and chip-select timing |
+| 61 | Simple dual-port RAM | Writing one address on a clock edge while reading another address asynchronously |
 
 ## Repository Structure
 
@@ -133,6 +134,7 @@ examples/
   58_binary_to_bcd/
   59_seven_segment_decoder/
   60_spi_master_transmitter/
+  61_simple_dual_port_ram/
 scripts/
   run_all.sh
   run_all.ps1

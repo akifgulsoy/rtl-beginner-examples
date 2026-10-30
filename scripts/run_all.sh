@@ -322,4 +322,9 @@ run_test "spi_master_transmitter" \
     "examples/60_spi_master_transmitter/tb_spi_master_transmitter.sv" \
     "tb_spi_master_transmitter"
 
+run_test "simple_dual_port_ram" \
+    "examples/61_simple_dual_port_ram/simple_dual_port_ram.sv" \
+    "examples/61_simple_dual_port_ram/tb_simple_dual_port_ram.sv" \
+    "tb_simple_dual_port_ram"
+
 echo "All RTL simulations passed."
