@@ -327,4 +327,9 @@ run_test "simple_dual_port_ram" \
     "examples/61_simple_dual_port_ram/tb_simple_dual_port_ram.sv" \
     "tb_simple_dual_port_ram"
 
+run_test "spi_mode0_receiver" \
+    "examples/62_spi_mode0_receiver/spi_mode0_receiver.sv" \
+    "examples/62_spi_mode0_receiver/tb_spi_mode0_receiver.sv" \
+    "tb_spi_mode0_receiver"
+
 echo "All RTL simulations passed."

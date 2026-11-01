@@ -372,6 +372,12 @@ $tests = @(
         Testbench = "examples/61_simple_dual_port_ram/tb_simple_dual_port_ram.sv"
         Top = "tb_simple_dual_port_ram"
     }
+    ,@{
+        Name = "spi_mode0_receiver"
+        Rtl = "examples/62_spi_mode0_receiver/spi_mode0_receiver.sv"
+        Testbench = "examples/62_spi_mode0_receiver/tb_spi_mode0_receiver.sv"
+        Top = "tb_spi_mode0_receiver"
+    }
 )
 
 foreach ($test in $tests) {
