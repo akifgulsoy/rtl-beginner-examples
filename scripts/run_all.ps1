@@ -378,6 +378,12 @@ $tests = @(
         Testbench = "examples/62_spi_mode0_receiver/tb_spi_mode0_receiver.sv"
         Top = "tb_spi_mode0_receiver"
     }
+    ,@{
+        Name = "write_mask_register"
+        Rtl = "examples/63_write_mask_register/write_mask_register.sv"
+        Testbench = "examples/63_write_mask_register/tb_write_mask_register.sv"
+        Top = "tb_write_mask_register"
+    }
 )
 
 foreach ($test in $tests) {

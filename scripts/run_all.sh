@@ -332,4 +332,9 @@ run_test "spi_mode0_receiver" \
     "examples/62_spi_mode0_receiver/tb_spi_mode0_receiver.sv" \
     "tb_spi_mode0_receiver"
 
+run_test "write_mask_register" \
+    "examples/63_write_mask_register/write_mask_register.sv" \
+    "examples/63_write_mask_register/tb_write_mask_register.sv" \
+    "tb_write_mask_register"
+
 echo "All RTL simulations passed."

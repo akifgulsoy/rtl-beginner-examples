@@ -70,6 +70,7 @@ finishes with either a clear `PASS` message or an error.
 | 60 | SPI master transmitter | Sending a word MSB first with mode-0 clock and chip-select timing |
 | 61 | Simple dual-port RAM | Writing one address on a clock edge while reading another address asynchronously |
 | 62 | SPI mode-0 receiver | Sampling an MSB-first SPI word on rising clock edges while chip select is active |
+| 63 | Write-mask register | Updating selected register bits while preserving all unmasked bits |
 
 ## Repository Structure
 
@@ -137,6 +138,7 @@ examples/
   60_spi_master_transmitter/
   61_simple_dual_port_ram/
   62_spi_mode0_receiver/
+  63_write_mask_register/
 scripts/
   run_all.sh
   run_all.ps1
