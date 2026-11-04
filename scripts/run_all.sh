@@ -337,4 +337,9 @@ run_test "write_mask_register" \
     "examples/63_write_mask_register/tb_write_mask_register.sv" \
     "tb_write_mask_register"
 
+run_test "synchronous_ram" \
+    "examples/64_synchronous_ram/synchronous_ram.sv" \
+    "examples/64_synchronous_ram/tb_synchronous_ram.sv" \
+    "tb_synchronous_ram"
+
 echo "All RTL simulations passed."

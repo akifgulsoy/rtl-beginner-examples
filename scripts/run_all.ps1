@@ -384,6 +384,12 @@ $tests = @(
         Testbench = "examples/63_write_mask_register/tb_write_mask_register.sv"
         Top = "tb_write_mask_register"
     }
+    ,@{
+        Name = "synchronous_ram"
+        Rtl = "examples/64_synchronous_ram/synchronous_ram.sv"
+        Testbench = "examples/64_synchronous_ram/tb_synchronous_ram.sv"
+        Top = "tb_synchronous_ram"
+    }
 )
 
 foreach ($test in $tests) {

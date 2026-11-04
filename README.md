@@ -71,6 +71,7 @@ finishes with either a clear `PASS` message or an error.
 | 61 | Simple dual-port RAM | Writing one address on a clock edge while reading another address asynchronously |
 | 62 | SPI mode-0 receiver | Sampling an MSB-first SPI word on rising clock edges while chip select is active |
 | 63 | Write-mask register | Updating selected register bits while preserving all unmasked bits |
+| 64 | Synchronous RAM | Registering reads on clock edges and returning old data during a write |
 
 ## Repository Structure
 
@@ -139,6 +140,7 @@ examples/
   61_simple_dual_port_ram/
   62_spi_mode0_receiver/
   63_write_mask_register/
+  64_synchronous_ram/
 scripts/
   run_all.sh
   run_all.ps1
@@ -194,6 +196,12 @@ vvp build/counter.out
 - Resets are intentionally varied so beginners can compare synchronous and
   asynchronous reset styles.
 - The code favors readability over clever shortcuts.
+- Example 64 contrasts with the asynchronous read in example 28: when enabled,
+  its output updates only after a rising clock edge. A write returns the old
+  addressed word on that edge; a subsequent read returns the new word. Disabling
+  the RAM holds both memory and output. There is no reset or initialization, so
+  write each location before reading it. Device RAM inference and collision
+  behavior should be checked against the target FPGA's synthesis documentation.
 
 ## License
 
