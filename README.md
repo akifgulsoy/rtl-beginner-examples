@@ -72,6 +72,7 @@ finishes with either a clear `PASS` message or an error.
 | 62 | SPI mode-0 receiver | Sampling an MSB-first SPI word on rising clock edges while chip select is active |
 | 63 | Write-mask register | Updating selected register bits while preserving all unmasked bits |
 | 64 | Synchronous RAM | Registering reads on clock edges and returning old data during a write |
+| 65 | Byte-enable RAM | Updating selected bytes of an addressed word in one clock cycle |
 
 ## Repository Structure
 
@@ -141,6 +142,7 @@ examples/
   62_spi_mode0_receiver/
   63_write_mask_register/
   64_synchronous_ram/
+  65_byte_enable_ram/
 scripts/
   run_all.sh
   run_all.ps1
@@ -202,6 +204,11 @@ vvp build/counter.out
   the RAM holds both memory and output. There is no reset or initialization, so
   write each location before reading it. Device RAM inference and collision
   behavior should be checked against the target FPGA's synthesis documentation.
+- Example 65 adds byte enables to the synchronous RAM pattern. Bit 0 of
+  `byte_en` selects bits 7:0, and each higher bit selects the next byte.
+  An enabled access captures the old word before updating the selected bytes.
+  Use an all-zero mask for a read and initialize every byte before relying on
+  the full word.
 
 ## License
 

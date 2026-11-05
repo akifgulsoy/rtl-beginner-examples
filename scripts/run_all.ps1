@@ -390,6 +390,12 @@ $tests = @(
         Testbench = "examples/64_synchronous_ram/tb_synchronous_ram.sv"
         Top = "tb_synchronous_ram"
     }
+    @{
+        Name = "byte_enable_ram"
+        Rtl = "examples/65_byte_enable_ram/byte_enable_ram.sv"
+        Testbench = "examples/65_byte_enable_ram/tb_byte_enable_ram.sv"
+        Top = "tb_byte_enable_ram"
+    }
 )
 
 foreach ($test in $tests) {

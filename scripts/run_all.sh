@@ -342,4 +342,9 @@ run_test "synchronous_ram" \
     "examples/64_synchronous_ram/tb_synchronous_ram.sv" \
     "tb_synchronous_ram"
 
+run_test "byte_enable_ram" \
+    "examples/65_byte_enable_ram/byte_enable_ram.sv" \
+    "examples/65_byte_enable_ram/tb_byte_enable_ram.sv" \
+    "tb_byte_enable_ram"
+
 echo "All RTL simulations passed."
