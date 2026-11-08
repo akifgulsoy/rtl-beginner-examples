@@ -73,6 +73,7 @@ finishes with either a clear `PASS` message or an error.
 | 63 | Write-mask register | Updating selected register bits while preserving all unmasked bits |
 | 64 | Synchronous RAM | Registering reads on clock edges and returning old data during a write |
 | 65 | Byte-enable RAM | Updating selected bytes of an addressed word in one clock cycle |
+| 66 | Min/max tracker | Remembering the smallest and largest accepted unsigned samples |
 
 ## Repository Structure
 
@@ -143,6 +144,7 @@ examples/
   63_write_mask_register/
   64_synchronous_ram/
   65_byte_enable_ram/
+  66_min_max_tracker/
 scripts/
   run_all.sh
   run_all.ps1
@@ -209,6 +211,11 @@ vvp build/counter.out
   An enabled access captures the old word before updating the selected bytes.
   Use an all-zero mask for a read and initialize every byte before relying on
   the full word.
+- Example 66 accepts an unsigned sample when `enable` is high on a rising
+  clock edge. The first accepted sample initializes both limits; `valid` stays
+  high until synchronous reset starts a new measurement window. Disabled cycles
+  hold the limits, and reset takes priority over accepting a sample. Only use
+  `minimum` and `maximum` when `valid` is high; `WIDTH` must be at least 1.
 
 ## License
 

@@ -347,4 +347,9 @@ run_test "byte_enable_ram" \
     "examples/65_byte_enable_ram/tb_byte_enable_ram.sv" \
     "tb_byte_enable_ram"
 
+run_test "min_max_tracker" \
+    "examples/66_min_max_tracker/min_max_tracker.sv" \
+    "examples/66_min_max_tracker/tb_min_max_tracker.sv" \
+    "tb_min_max_tracker"
+
 echo "All RTL simulations passed."

@@ -396,6 +396,12 @@ $tests = @(
         Testbench = "examples/65_byte_enable_ram/tb_byte_enable_ram.sv"
         Top = "tb_byte_enable_ram"
     }
+    @{
+        Name = "min_max_tracker"
+        Rtl = "examples/66_min_max_tracker/min_max_tracker.sv"
+        Testbench = "examples/66_min_max_tracker/tb_min_max_tracker.sv"
+        Top = "tb_min_max_tracker"
+    }
 )
 
 foreach ($test in $tests) {
