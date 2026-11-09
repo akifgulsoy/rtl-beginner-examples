@@ -352,4 +352,9 @@ run_test "min_max_tracker" \
     "examples/66_min_max_tracker/tb_min_max_tracker.sv" \
     "tb_min_max_tracker"
 
+run_test "windowed_sum" \
+    "examples/67_windowed_sum/windowed_sum.sv" \
+    "examples/67_windowed_sum/tb_windowed_sum.sv" \
+    "tb_windowed_sum"
+
 echo "All RTL simulations passed."

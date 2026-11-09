@@ -402,6 +402,12 @@ $tests = @(
         Testbench = "examples/66_min_max_tracker/tb_min_max_tracker.sv"
         Top = "tb_min_max_tracker"
     }
+    @{
+        Name = "windowed_sum"
+        Rtl = "examples/67_windowed_sum/windowed_sum.sv"
+        Testbench = "examples/67_windowed_sum/tb_windowed_sum.sv"
+        Top = "tb_windowed_sum"
+    }
 )
 
 foreach ($test in $tests) {

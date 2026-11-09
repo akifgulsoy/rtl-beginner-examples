@@ -74,6 +74,7 @@ finishes with either a clear `PASS` message or an error.
 | 64 | Synchronous RAM | Registering reads on clock edges and returning old data during a write |
 | 65 | Byte-enable RAM | Updating selected bytes of an addressed word in one clock cycle |
 | 66 | Min/max tracker | Remembering the smallest and largest accepted unsigned samples |
+| 67 | Windowed sum | Counting enabled samples and publishing the sum of each group |
 
 ## Repository Structure
 
@@ -145,6 +146,7 @@ examples/
   64_synchronous_ram/
   65_byte_enable_ram/
   66_min_max_tracker/
+  67_windowed_sum/
 scripts/
   run_all.sh
   run_all.ps1
@@ -216,6 +218,14 @@ vvp build/counter.out
   high until synchronous reset starts a new measurement window. Disabled cycles
   hold the limits, and reset takes priority over accepting a sample. Only use
   `minimum` and `maximum` when `valid` is high; `WIDTH` must be at least 1.
+- Example 67 groups unsigned samples into non-overlapping windows of
+  `WINDOW_SIZE` enabled rising edges. On the last accepted sample, it updates
+  `sum` and asserts `valid` for that result. Consecutive one-sample windows
+  can keep `valid` high across consecutive cycles. Disabled cycles pause the
+  window and preserve the most recent sum. Synchronous reset discards any
+  partial window and clears the outputs. `WIDTH` and `WINDOW_SIZE` must each
+  be at least 1. The sum uses `WIDTH + $clog2(WINDOW_SIZE)` bits to fit the
+  largest possible window total.
 
 ## License
 
