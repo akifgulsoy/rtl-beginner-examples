@@ -357,4 +357,9 @@ run_test "windowed_sum" \
     "examples/67_windowed_sum/tb_windowed_sum.sv" \
     "tb_windowed_sum"
 
+run_test "sliding_window_sum" \
+  "examples/68_sliding_window_sum/sliding_window_sum.sv" \
+  "examples/68_sliding_window_sum/tb_sliding_window_sum.sv" \
+  "tb_sliding_window_sum"
+
 echo "All RTL simulations passed."

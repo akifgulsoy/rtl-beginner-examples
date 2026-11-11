@@ -75,6 +75,7 @@ finishes with either a clear `PASS` message or an error.
 | 65 | Byte-enable RAM | Updating selected bytes of an addressed word in one clock cycle |
 | 66 | Min/max tracker | Remembering the smallest and largest accepted unsigned samples |
 | 67 | Windowed sum | Counting enabled samples and publishing the sum of each group |
+| 68 | Sliding-window sum | Using a circular buffer to replace the oldest sample in a running sum |
 
 ## Repository Structure
 
@@ -147,6 +148,7 @@ examples/
   65_byte_enable_ram/
   66_min_max_tracker/
   67_windowed_sum/
+  68_sliding_window_sum/
 scripts/
   run_all.sh
   run_all.ps1
@@ -226,6 +228,14 @@ vvp build/counter.out
   partial window and clears the outputs. `WIDTH` and `WINDOW_SIZE` must each
   be at least 1. The sum uses `WIDTH + $clog2(WINDOW_SIZE)` bits to fit the
   largest possible window total.
+- Example 68 keeps the latest `WINDOW_SIZE` enabled samples in a circular
+  buffer. Once the buffer fills, each new sample replaces the oldest and
+  `sum` subtracts the old value before adding the new one. `sum` holds a
+  partial total during the initial fill. `valid` is high on cycles that
+  publish a full-window result, including consecutive enabled cycles.
+  Disabled cycles hold the sum and buffer position and clear `valid`.
+  Synchronous reset clears the sum and restarts the fill. `WIDTH` and
+  `WINDOW_SIZE` must each be at least 1.
 
 ## License
 

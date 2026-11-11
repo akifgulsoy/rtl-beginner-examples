@@ -408,6 +408,12 @@ $tests = @(
         Testbench = "examples/67_windowed_sum/tb_windowed_sum.sv"
         Top = "tb_windowed_sum"
     }
+    @{
+        Name = "sliding_window_sum"
+        Rtl = "examples/68_sliding_window_sum/sliding_window_sum.sv"
+        Testbench = "examples/68_sliding_window_sum/tb_sliding_window_sum.sv"
+        Top = "tb_sliding_window_sum"
+    }
 )
 
 foreach ($test in $tests) {
