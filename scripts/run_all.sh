@@ -362,4 +362,9 @@ run_test "sliding_window_sum" \
   "examples/68_sliding_window_sum/tb_sliding_window_sum.sv" \
   "tb_sliding_window_sum"
 
+run_test "fixed_point_rounder" \
+  "examples/69_fixed_point_rounder/fixed_point_rounder.sv" \
+  "examples/69_fixed_point_rounder/tb_fixed_point_rounder.sv" \
+  "tb_fixed_point_rounder"
+
 echo "All RTL simulations passed."

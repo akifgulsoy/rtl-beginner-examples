@@ -76,6 +76,7 @@ finishes with either a clear `PASS` message or an error.
 | 66 | Min/max tracker | Remembering the smallest and largest accepted unsigned samples |
 | 67 | Windowed sum | Counting enabled samples and publishing the sum of each group |
 | 68 | Sliding-window sum | Using a circular buffer to replace the oldest sample in a running sum |
+| 69 | Fixed-point rounder | Rounding to the nearest integer and choosing the even integer at a tie |
 
 ## Repository Structure
 
@@ -149,6 +150,7 @@ examples/
   66_min_max_tracker/
   67_windowed_sum/
   68_sliding_window_sum/
+  69_fixed_point_rounder/
 scripts/
   run_all.sh
   run_all.ps1
@@ -236,6 +238,12 @@ vvp build/counter.out
   Disabled cycles hold the sum and buffer position and clear `valid`.
   Synchronous reset clears the sum and restarts the fill. `WIDTH` and
   `WINDOW_SIZE` must each be at least 1.
+- Example 69 splits an unsigned fixed-point input into `WHOLE_WIDTH` integer
+  bits and `FRAC_BITS` fractional bits. It rounds fractions above one half up
+  and fractions below one half down. At exactly one half, it increments only
+  when the integer part is odd, so both `2.5` and `1.5` round to `2`.
+  The output includes an extra bit so `15.75` can round to `16` with four
+  integer bits. Both parameters must be at least 1.
 
 ## License
 

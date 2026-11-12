@@ -414,6 +414,12 @@ $tests = @(
         Testbench = "examples/68_sliding_window_sum/tb_sliding_window_sum.sv"
         Top = "tb_sliding_window_sum"
     }
+    @{
+        Name = "fixed_point_rounder"
+        Rtl = "examples/69_fixed_point_rounder/fixed_point_rounder.sv"
+        Testbench = "examples/69_fixed_point_rounder/tb_fixed_point_rounder.sv"
+        Top = "tb_fixed_point_rounder"
+    }
 )
 
 foreach ($test in $tests) {
