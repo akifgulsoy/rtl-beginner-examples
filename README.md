@@ -77,6 +77,7 @@ finishes with either a clear `PASS` message or an error.
 | 67 | Windowed sum | Counting enabled samples and publishing the sum of each group |
 | 68 | Sliding-window sum | Using a circular buffer to replace the oldest sample in a running sum |
 | 69 | Fixed-point rounder | Rounding to the nearest integer and choosing the even integer at a tie |
+| 70 | Signed absolute value | Representing the magnitude of a two's-complement value in an unsigned word |
 
 ## Repository Structure
 
@@ -151,6 +152,7 @@ examples/
   67_windowed_sum/
   68_sliding_window_sum/
   69_fixed_point_rounder/
+  70_signed_absolute_value/
 scripts/
   run_all.sh
   run_all.ps1
@@ -244,6 +246,12 @@ vvp build/counter.out
   when the integer part is odd, so both `2.5` and `1.5` round to `2`.
   The output includes an extra bit so `15.75` can round to `16` with four
   integer bits. Both parameters must be at least 1.
+- Example 70 takes a signed two's-complement input and returns its magnitude
+  as an unsigned word of the same width. With `WIDTH = 4`, the input bits
+  `1000` represent `-8` and the output bits `1000` represent `8`. The signed
+  input range is `-8` through `7`, so the unsigned output can represent a
+  magnitude that exceeds the largest positive signed input. `WIDTH` must be
+  at least 1.
 
 ## License
 

@@ -420,6 +420,12 @@ $tests = @(
         Testbench = "examples/69_fixed_point_rounder/tb_fixed_point_rounder.sv"
         Top = "tb_fixed_point_rounder"
     }
+    @{
+        Name = "signed_absolute_value"
+        Rtl = "examples/70_signed_absolute_value/signed_absolute_value.sv"
+        Testbench = "examples/70_signed_absolute_value/tb_signed_absolute_value.sv"
+        Top = "tb_signed_absolute_value"
+    }
 )
 
 foreach ($test in $tests) {

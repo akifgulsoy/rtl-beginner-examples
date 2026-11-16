@@ -367,4 +367,9 @@ run_test "fixed_point_rounder" \
   "examples/69_fixed_point_rounder/tb_fixed_point_rounder.sv" \
   "tb_fixed_point_rounder"
 
+run_test "signed_absolute_value" \
+  "examples/70_signed_absolute_value/signed_absolute_value.sv" \
+  "examples/70_signed_absolute_value/tb_signed_absolute_value.sv" \
+  "tb_signed_absolute_value"
+
 echo "All RTL simulations passed."
