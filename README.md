@@ -78,6 +78,7 @@ finishes with either a clear `PASS` message or an error.
 | 68 | Sliding-window sum | Using a circular buffer to replace the oldest sample in a running sum |
 | 69 | Fixed-point rounder | Rounding to the nearest integer and choosing the even integer at a tie |
 | 70 | Signed absolute value | Representing the magnitude of a two's-complement value in an unsigned word |
+| 71 | Signed saturating resize | Narrowing a signed value by clamping it to the output range |
 
 ## Repository Structure
 
@@ -153,6 +154,7 @@ examples/
   68_sliding_window_sum/
   69_fixed_point_rounder/
   70_signed_absolute_value/
+  71_signed_saturating_resize/
 scripts/
   run_all.sh
   run_all.ps1
@@ -252,6 +254,10 @@ vvp build/counter.out
   input range is `-8` through `7`, so the unsigned output can represent a
   magnitude that exceeds the largest positive signed input. `WIDTH` must be
   at least 1.
+- Example 71 compares a signed input against the output range before
+  taking the low bits. For a 3-bit signed output, `5` clamps to `3`,
+  `-5` clamps to `-4`, and `-2` stays `-2`. Taking the low bits first
+  would turn `5` into `-3`. Use `IN_WIDTH >= OUT_WIDTH >= 1`.
 
 ## License
 

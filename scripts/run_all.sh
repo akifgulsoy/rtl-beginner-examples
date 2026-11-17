@@ -372,4 +372,9 @@ run_test "signed_absolute_value" \
   "examples/70_signed_absolute_value/tb_signed_absolute_value.sv" \
   "tb_signed_absolute_value"
 
+run_test "signed_saturating_resize" \
+  "examples/71_signed_saturating_resize/signed_saturating_resize.sv" \
+  "examples/71_signed_saturating_resize/tb_signed_saturating_resize.sv" \
+  "tb_signed_saturating_resize"
+
 echo "All RTL simulations passed."

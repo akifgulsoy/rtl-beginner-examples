@@ -426,6 +426,12 @@ $tests = @(
         Testbench = "examples/70_signed_absolute_value/tb_signed_absolute_value.sv"
         Top = "tb_signed_absolute_value"
     }
+    @{
+        Name = "signed_saturating_resize"
+        Rtl = "examples/71_signed_saturating_resize/signed_saturating_resize.sv"
+        Testbench = "examples/71_signed_saturating_resize/tb_signed_saturating_resize.sv"
+        Top = "tb_signed_saturating_resize"
+    }
 )
 
 foreach ($test in $tests) {
