@@ -377,4 +377,9 @@ run_test "signed_saturating_resize" \
   "examples/71_signed_saturating_resize/tb_signed_saturating_resize.sv" \
   "tb_signed_saturating_resize"
 
+run_test "unsigned_subtractor" \
+  "examples/72_unsigned_subtractor/unsigned_subtractor.sv" \
+  "examples/72_unsigned_subtractor/tb_unsigned_subtractor.sv" \
+  "tb_unsigned_subtractor"
+
 echo "All RTL simulations passed."

@@ -432,6 +432,12 @@ $tests = @(
         Testbench = "examples/71_signed_saturating_resize/tb_signed_saturating_resize.sv"
         Top = "tb_signed_saturating_resize"
     }
+    @{
+        Name = "unsigned_subtractor"
+        Rtl = "examples/72_unsigned_subtractor/unsigned_subtractor.sv"
+        Testbench = "examples/72_unsigned_subtractor/tb_unsigned_subtractor.sv"
+        Top = "tb_unsigned_subtractor"
+    }
 )
 
 foreach ($test in $tests) {
